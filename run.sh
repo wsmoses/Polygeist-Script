@@ -8,8 +8,8 @@ stdinclude=$HOME/mlir-gpu/llvm/../clang/lib/Headers
 
 CC='clang -O3'
 
-CCPolly='clang -O3 -mllvm -polly -mllvm -polly-pattern-matching-based-opts=false -mllvm -polly-vectorizer=stripmine'
-CCPollyParallel='clang -O3 -mllvm -polly -mllvm -polly-pattern-matching-based-opts=false -mllvm -polly-vectorizer=stripmine -mllvm -polly-parallel -mllvm -polly-parallel-force -mllvm -polly-omp-backend=LLVM -mllvm -polly-scheduling=dynamic -mllvm -polly-scheduling-chunksize=4'
+CCPolly='clang -O3 -mllvm -polly -mllvm -polly-pattern-matching-based-opts=false'
+CCPollyParallel='clang -O3 -mllvm -polly -mllvm -polly-pattern-matching-based-opts=false -mllvm -polly-parallel -mllvm -polly-parallel-force -mllvm -polly-omp-backend=LLVM -mllvm -polly-scheduling=dynamic -mllvm -polly-scheduling-chunksize=4'
 
 
 CCPluto='polycc --silent --tile'
