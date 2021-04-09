@@ -1,26 +1,13 @@
-#!/usr/bin/env bash
 
-set -o errexit
-set -o pipefail
-set -o nounset
+#!/bin/bash
 
 export PATH=$HOME/mlir-gpu/build/bin:$PATH
 export PATH=$HOME/pluto:$PATH
 
 stdinclude=$HOME/mlir-gpu/llvm/../clang/lib/Headers
 
-CC='clang -O3'
-
-CCPolly='clang -O3 -mllvm -polly -mllvm -polly-pattern-matching-based-opts=false'
-CCPollyParallel='clang -O3 -mllvm -polly -mllvm -polly-pattern-matching-based-opts=false -mllvm -polly-parallel -mllvm -polly-parallel-force -mllvm -polly-omp-backend=LLVM -mllvm -polly-scheduling=dynamic -mllvm -polly-scheduling-chunksize=4'
-
-
-CCPluto='polycc --silent --tile'
-CCPlutoParallel='polycc --silent --parallel --tile'
-
-CCMlir='mlir-clang'
-
 LDFLAGS=-lm
+
 BASE=$(pwd)
 
 dirList="linear-algebra/blas
@@ -39,6 +26,7 @@ TOOLS="clangsing clang mlir-clang polly pollypar pluto plutopar polymer polymerp
 
 function run()
 {
+  
   TOOL="$1"
   TEST="$2"
   OUT=$TEST.$TOOL.ll
@@ -57,11 +45,16 @@ function run()
       ;;
 
     polly)
-      clang $CFLAGS -O3 -S -emit-llvm $TEST.c -o $OUT -mllvm -polly -mllvm -polly-pattern-matching-based-opts=false -mllvm -polly-vectorizer=none
+      clang $CFLAGS -O3 -S -emit-llvm $TEST.c -o $OUT \ 
+        -mllvm -polly -mllvm -polly-pattern-matching-based-opts=false -mllvm -polly-vectorizer=none
       ;;
 
     pollypar)
-      clang $CFLAGS -O3 -S -emit-llvm $TEST.c -o $OUT -mllvm -polly -mllvm -polly-pattern-matching-based-opts=false -mllvm -polly-vectorizer=none -mllvm -polly-parallel -mllvm -polly-parallel-force -mllvm -polly-omp-backend=LLVM -mllvm -polly-scheduling=dynamic -mllvm -polly-scheduling-chunksize=4
+      clang $CFLAGS -O3 -S -emit-llvm $TEST.c -o $OUT \
+	      -mllvm -polly -mllvm -polly-pattern-matching-based-opts=false \
+	      -mllvm -polly-vectorizer=none -mllvm -polly-parallel -mllvm \
+	      -polly-parallel-force -mllvm -polly-omp-backend=LLVM \
+	      -mllvm -polly-scheduling=dynamic -mllvm -polly-scheduling-chunksize=4
       ;;
 
     pluto)
@@ -108,7 +101,7 @@ function run()
         RESULT="$TOOL:nan"
         return
       fi
-      # TODO add parallelism flag
+      #TODO add parallelism flag
       mlir-clang $CFLAGS $TEST.c -o $TEST.$TOOL.in.mlir
       polymer-opt --demote-loop-reduction \
            --extract-scop-stmt \
@@ -136,97 +129,24 @@ function run()
       exit 1
       ;;
   esac
-  clang $BASE/utilities/polybench.c -O3 -march=native $OUT -o $TEST.$TOOL.exe -lm -fopenmp
+  # TODO
+  if [ $1 == "clang" ] 
+  then 
+  	clang $BASE/utilities/polybench.c -O3 -march=native $OUT -o $TEST.$TOOL.exe -lm
+  else 
+	clang $BASE/utilities/polybench.c -O3 -march=native $OUT -o $TEST.$TOOL.exe -lm -fopenmp
+  fi	
 }
 
 for dir in $dirList; do
   cd "$BASE/$dir"
   for subDir in `ls`; do
-    cd $subDir
-
-
-    ## compiling clang -O3.
-    S="$CC $CFLAGS"
-    S+=" $BASE/utilities/polybench.c $subDir.c $LDFLAGS -o $subDir.clang.exe"
-    # compile
-    #$S
-
-    ## compiling polly and clang -O3.
-    S="$CCPolly $CFLAGS"
-    S+=" $BASE/utilities/polybench.c $subDir.c $LDFLAGS -o $subDir.polly.exe"
-    # compile
-    #$S
-
-    ## compiling polly parallel and clang -O3.
-    S="$CCPollyParallel $CFLAGS"
-    S+=" -I $BASE/utilities -I $(pwd) -I $stdinclude"
-    S+=" $BASE/utilities/polybench.c $subDir.c $LDFLAGS -lomp -o $subDir.polly.parallel.exe"
-    # compile
-    #$S
-
-    if [[ $subDir != "adi" ]]
-    then
-      ## compiling pluto and clang -O3.
-      S=$CCPluto
-      S+=" $subDir.c -o $subDir.pluto.c"
-      $S
-      S="$CC $CFLAGS"
-      S+=" $BASE/utilities/polybench.c $subDir.pluto.c $LDFLAGS -o $subDir.pluto.exe"
-      # compile
-      $S
-
-      ## compiling pluto paralle and clang -O3.
-      S=$CCPlutoParallel
-      S+=" $subDir.c -o $subDir.pluto.parallel.c"
-      $S
-      S="$CC $CFLAGS"
-      S+=" $BASE/utilities/polybench.c $subDir.pluto.parallel.c $LDFLAGS -fopenmp -o $subDir.pluto.parallel.exe"
-      # compile
-      #$S
-    fi
-
-    ## compiling mlir-clang.
-    S="$CCMlir $CFLAGS"
-    S+=" $subDir.c $BASE/utilities/polybench.c"
-    S+=" --emit-llvm"
-    #compile
-    $S | clang -x ir - -O3 -o $subDir.mlir.exe
-    echo $S
-
-    clang=$subDir.clang
-    polly=$subDir.polly
-    pollypar=$subDir.polly.parallel
-    pluto=$subDir.pluto
-    plutopar=$subDir.pluto.parallel
-    #mlir=$subDir.mlir
-
-    for i in 1 2 3; do
-      t=$(taskset -c 1-8 numactl -i all ./$subDir.clang.exe)
-      clang="$clang:$t"
-
-      t=$(taskset -c 1-8 numactl -i all ./$subDir.polly.exe)
-      polly="$polly:$t"
-
-      t=$(taskset -c 1-8 numactl -i all ./$subDir.polly.parallel.exe)
-      pollypar="$pollypar:$t"
-
-      t=$(taskset -c 1-8 numactl -i all ./$subDir.pluto.exe)
-      pluto="$pluto:$t"
-
-      t=$(taskset -c 1-8 numactl -i all ./$subDir.pluto.parallel.exe)
-      plutopar="$plutopar:$t"
-
-      #t=`./$subDir.mlir.exe`
-      #mlir="$mlir:$t"
-
-    done
-
-    echo $clang
-    echo $polly
-    echo $pollypar
-    echo $pluto
-    echo $plutopar
-    #echo $mlir
+    cd $subDir 
+    
+    echo $(pwd)
+    #for tool in $TOOLS; do
+      run "clang" $subDir
+    #done 
 
     cd ../
   done
