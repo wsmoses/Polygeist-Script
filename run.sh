@@ -112,10 +112,7 @@ function run()
            --extract-scop-stmt \
            --pluto-opt='parallelize=1' \
            --inline \
-           --canonicalize \
-	   # This is needed?
-      	   --pluto-opt="dump-clast-after-pluto=$TEST.$TOOL.cloog" \
-      -canonicalize $TEST.$TOOL.in.mlir 2>/dev/null > $TEST.$TOOL.out.mlir
+           --canonicalize $TEST.$TOOL.in.mlir 2>/dev/null > $TEST.$TOOL.out.mlir
 
       mlir-opt --mem2reg \
            --detect-reduction \
