@@ -7,6 +7,7 @@ set -o nounset
 
 export PATH=$HOME/mlir-gpu/build/bin:$PATH
 export PATH=$HOME/pluto:$PATH
+export C_INCLUDE_PATH=$home/mlir-gpu/build/projects/openmp/runtime/src
 
 stdinclude=$HOME/mlir-gpu/llvm/../clang/lib/Headers
 
@@ -147,7 +148,7 @@ for dir in $dirList; do
     
     echo $(pwd)
     #for tool in $TOOLS; do
-      run "clang" $subDir
+      run "pollypar" $subDir
     #done 
 
     cd ../
