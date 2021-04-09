@@ -67,7 +67,8 @@ function run()
         RESULT="$TOOL:nan"
         return
       fi
-      plutocc --silent --tile $TEST.c -o $TEST.$TOOL.c
+      # NOTE: in recent version pluto use --tile and --parallel as def.
+      polycc --silent --tile --noparallel $TEST.c -o $TEST.$TOOL.c
       clang $CFLAGS -O3 -S -emit-llvm $TEST.$TOOL.c -o $OUT
       ;;
 
@@ -77,7 +78,7 @@ function run()
         RESULT="$TOOL:nan"
         return
       fi
-      plutocc --silent --parallel --tile $TEST.c -o $TEST.$TOOL.c
+      polycc --silent --parallel --tile $TEST.c -o $TEST.$TOOL.c
       clang $CFLAGS -O3 -S -emit-llvm $TEST.$TOOL.c -o $OUT
       ;;
 
@@ -134,7 +135,7 @@ function run()
       ;;
   esac
   # TODO
-  if [ $1 == "clang" ] 
+  if [[ $1 == "clang" || $1 == "polly" || $1 == "pluto" || $1 == "mlir-clang" ]] 
   then 
   	clang $BASE/utilities/polybench.c -O3 -march=native $OUT -o $TEST.$TOOL.exe -lm
   else 
