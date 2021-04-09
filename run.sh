@@ -1,5 +1,8 @@
+#!/usr/bin/env bash
 
-#!/bin/bash
+set -o errexit
+set -o pipefail
+set -o nounset
 
 export PATH=$HOME/mlir-gpu/build/bin:$PATH
 export PATH=$HOME/pluto:$PATH
@@ -105,7 +108,7 @@ function run()
         RESULT="$TOOL:nan"
         return
       fi
-      TODO add parallelism flag
+      # TODO add parallelism flag
       mlir-clang $CFLAGS $TEST.c -o $TEST.$TOOL.in.mlir
       polymer-opt -reg2mem \
       -insert-redundant-load \
@@ -189,19 +192,19 @@ for dir in $dirList; do
     #mlir=$subDir.mlir
 
     for i in 1 2 3; do
-      t=`taskset -c 1-8 numactl -i all ./$subDir.clang.exe`
+      t=$(taskset -c 1-8 numactl -i all ./$subDir.clang.exe)
       clang="$clang:$t"
 
-      t=`taskset -c 1-8 numactl -i all ./$subDir.polly.exe`
+      t=$(taskset -c 1-8 numactl -i all ./$subDir.polly.exe)
       polly="$polly:$t"
 
-      t=`taskset -c 1-8 numactl -i all ./$subDir.polly.parallel.exe`
+      t=$(taskset -c 1-8 numactl -i all ./$subDir.polly.parallel.exe)
       pollypar="$pollypar:$t"
 
-      t=`taskset -c 1-8 numactl -i all ./$subDir.pluto.exe`
+      t=$(taskset -c 1-8 numactl -i all ./$subDir.pluto.exe)
       pluto="$pluto:$t"
 
-      t=`taskset -c 1-8 numactl -i all ./$subDir.pluto.parallel.exe`
+      t=$(taskset -c 1-8 numactl -i all ./$subDir.pluto.parallel.exe)
       plutopar="$plutopar:$t"
 
       #t=`./$subDir.mlir.exe`
@@ -218,5 +221,4 @@ for dir in $dirList; do
 
     cd ../
   done
-  fi
 done
