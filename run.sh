@@ -110,15 +110,25 @@ function run()
       fi
       # TODO add parallelism flag
       mlir-clang $CFLAGS $TEST.c -o $TEST.$TOOL.in.mlir
-      polymer-opt -reg2mem \
-      -insert-redundant-load \
-      -extract-scop-stmt \
-      -canonicalize \
-      -pluto-opt="dump-clast-after-pluto=$TEST.$TOOL.cloog" \
+      polymer-opt --demote-loop-reduction \
+           --extract-scop-stmt \
+           --pluto-opt='parallelize=1' \
+           --inline \
+           --canonicalize \
+	   # This is needed?
+      	   --pluto-opt="dump-clast-after-pluto=$TEST.$TOOL.cloog" \
       -canonicalize $TEST.$TOOL.in.mlir 2>/dev/null > $TEST.$TOOL.out.mlir
 
-      mlir-opt -lower-affine -convert-scf-to-std -canonicalize -convert-std-to-llvm $TEST.$TOOL.out.mlir |\
-        mlir-translate -mlir-to-llvmir > $OUT
+      mlir-opt --mem2reg \
+           --detect-reduction \
+           --mem2reg \
+           --canonicalize \
+           --affine-parallelize \
+           --lower-affine \
+           --convert-scf-to-openmp \
+           --convert-scf-to-std \
+           --convert-openmp-to-llvm  $TEST.$TOOL.out.mlir |\ 
+	mlir-translate -mlir-to-llvmir > $OUT
       ;;
 
     *)
@@ -127,7 +137,6 @@ function run()
       ;;
   esac
   clang $BASE/utilities/polybench.c -O3 -march=native $OUT -o $TEST.$TOOL.exe -lm -fopenmp
-  TODO
 }
 
 for dir in $dirList; do
