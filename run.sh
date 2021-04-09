@@ -68,7 +68,7 @@ function run()
         return
       fi
       # NOTE: in recent version pluto use --tile and --parallel as def.
-      polycc --silent --tile --noparallel $TEST.c -o $TEST.$TOOL.c
+      polycc --silent --tile --noparallel --noprevector --nounrolljam $TEST.c -o $TEST.$TOOL.c
       clang $CFLAGS -O3 -S -emit-llvm $TEST.$TOOL.c -o $OUT
       ;;
 
@@ -78,7 +78,7 @@ function run()
         RESULT="$TOOL:nan"
         return
       fi
-      polycc --silent --parallel --tile $TEST.c -o $TEST.$TOOL.c
+      polycc --silent --parallel --tile --noprevector --nounrolljam $TEST.c -o $TEST.$TOOL.c
       clang $CFLAGS -O3 -S -emit-llvm $TEST.$TOOL.c -o $OUT
       ;;
 
