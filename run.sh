@@ -1,5 +1,9 @@
 
-#!/bin/bash
+#!/usr/bin/env bash
+
+set -o errexit
+set -o pipefail
+set -o nounset
 
 export PATH=$HOME/mlir-gpu/build/bin:$PATH
 export PATH=$HOME/pluto:$PATH
