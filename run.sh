@@ -22,8 +22,7 @@ dirList="linear-algebra/blas
          stencils
          medley"
 
-# Double check if pwd still needed, likely no
-CFLAGS="-fopenmp -I $BASE/utilities -I $stdinclude -D POLYBENCH_TIME -D POLYBENCH_NO_FLUSH_CACHE -D EXTRALARGE_DATASET "
+CFLAGS="-I $BASE/utilities -I $stdinclude -D POLYBENCH_TIME -D POLYBENCH_NO_FLUSH_CACHE -D EXTRALARGE_DATASET "
 
 #dirList="linear-algebra/blas"
 
@@ -135,9 +134,9 @@ function run()
   # TODO
   if [[ $1 == "clang" || $1 == "polly" || $1 == "pluto" || $1 == "mlir-clang" ]] 
   then 
-  	clang $BASE/utilities/polybench.c -O3 -march=native $OUT -o $TEST.$TOOL.exe -lm
+  	clang $BASE/utilities/polybench.c -O3 -march=native $OUT -o $TEST.$TOOL.exe -lm -D POLYBENCH_NO_FLUSH_CACHE -D EXTRALARGE_DATASET
   else 
-	clang $BASE/utilities/polybench.c -O3 -march=native $OUT -o $TEST.$TOOL.exe -lm -fopenmp
+	clang $BASE/utilities/polybench.c -O3 -march=native $OUT -o $TEST.$TOOL.exe -lm -fopenmp -D POLYBENCH_NO_FLUSH_CACHE -D EXTRALARGE_DATASET
   fi	
 }
 
