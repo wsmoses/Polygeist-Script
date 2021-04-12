@@ -8,7 +8,7 @@ set -o nounset
 export PATH=$HOME/mlir-gpu/build/bin:$HOME/pluto:$HOME/polymer/build/bin:$PATH
 
 export C_INCLUDE_PATH=$HOME/mlir-gpu/build/projects/openmp/runtime/src
-export LD_LIBRARY_PATH=/home/ubuntu/polymer/build/pluto/lib/:/home/ubuntu/mlir-gpu/build/lib
+export LD_LIBRARY_PATH=$HOME/polymer/build/pluto/lib/:$HOME/mlir-gpu/build/lib
 
 stdinclude=$HOME/mlir-gpu/llvm/../clang/lib/Headers
 
@@ -61,7 +61,7 @@ function run()
       ;;
 
     pollypar)
-      clang $CFLAGS -O3 -S -emit-llvm $TEST.c -o $OUT -mllvm -polly -mllvm -polly-pattern-matching-based-opts=false -mllvm -polly-vectorizer=none -mllvm -polly-parallel -mllvm -polly-parallel-force -mllvm -polly-omp-backend=LLVM -mllvm -polly-scheduling=dynamic -mllvm -polly-scheduling-chunksize=4
+      clang $CFLAGS -O3 -S -emit-llvm $TEST.c -o $OUT -mllvm -polly -mllvm -polly-pattern-matching-based-opts=false -mllvm -polly-vectorizer=none -mllvm -polly-parallel -mllvm -polly-parallel-force -mllvm -polly-omp-backend=LLVM -mllvm -polly-scheduling=static
       ;;
 
     pluto)
@@ -82,7 +82,7 @@ function run()
         return
       fi
       polycc --silent --parallel --tile --noprevector --nounrolljam $TEST.c -o $TEST.$TOOL.c
-      clang $CFLAGS -O3 -S -emit-llvm $TEST.$TOOL.c -o $OUT
+      clang $CFLAGS -O3 -fopenmp -S -emit-llvm $TEST.$TOOL.c -o $OUT
       ;;
 
     polymer)
