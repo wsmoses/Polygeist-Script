@@ -94,6 +94,8 @@ function run()
 
       mlir-opt -lower-affine -convert-scf-to-std -canonicalize -convert-std-to-llvm $TEST.$TOOL.out.mlir |\
         mlir-translate -mlir-to-llvmir > $OUT
+	
+      opt -S $OUT -march=native -O3 -force-vector-width=1 -force-vector-interleave=1 -disable-loop-unrolling -o $OUT
       ;;
 
     polymerpar)
@@ -108,6 +110,7 @@ function run()
            --canonicalize $TEST.$TOOL.in.mlir 2>/dev/null > $TEST.$TOOL.out.mlir
 
       mlir-opt -mem2reg -detect-reduction -mem2reg -canonicalize -affine-parallelize -lower-affine -convert-scf-to-openmp -convert-scf-to-std -convert-openmp-to-llvm $TEST.$TOOL.out.mlir | mlir-translate -mlir-to-llvmir > $OUT
+      opt -S $OUT -march=native -O3 -force-vector-width=1 -force-vector-interleave=1 -disable-loop-unrolling -o $OUT
       ;;
 
     *)
