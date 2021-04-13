@@ -65,7 +65,7 @@ function run()
       ;;
 
     pluto)
-      if [[ $subDir == "adi" ]]
+      if [[ $2 == "adi" ]]
       then
         RESULT="$TOOL:nan"
         return
