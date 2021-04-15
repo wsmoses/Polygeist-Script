@@ -27,7 +27,7 @@ dirList="linear-algebra/blas
          linear-algebra/kernels
          linear-algebra/solvers"
 
-CFLAGS="-I $BASE/utilities -I $stdinclude -D POLYBENCH_TIME -D POLYBENCH_NO_FLUSH_CACHE -D EXTRALARGE_DATASET "
+CFLAGS="-march=native -I $BASE/utilities -I $stdinclude -D POLYBENCH_TIME -D POLYBENCH_NO_FLUSH_CACHE -D EXTRALARGE_DATASET "
 
 #dirList="linear-algebra/blas"
 
@@ -49,7 +49,7 @@ function run()
       ;;
 
     clang)
-      clang $CFLAGS -O3 -S -emit-llvm $TEST.c -o $OUT
+      clang $CFLAGS -O3 -S -emit-llvm $TEST.c -o - -fno-vectorize -fno-unroll-loops | sed 's/llvm.loop.unroll.disable//g' > $OUT
       ;;
 
     mlir-clang)
@@ -57,11 +57,11 @@ function run()
       ;;
 
     polly)
-      clang $CFLAGS -O3 -S -emit-llvm $TEST.c -o $OUT -mllvm -polly -mllvm -polly-pattern-matching-based-opts=false -mllvm -polly-vectorizer=none
+      clang $CFLAGS -O3 -S -emit-llvm $TEST.c -mllvm -polly -mllvm -polly-pattern-matching-based-opts=false -mllvm -polly-vectorizer=none -o - -fno-vectorize -fno-unroll-loops | sed 's/llvm.loop.unroll.disable//g' > $OUT
       ;;
 
     pollypar)
-      clang $CFLAGS -O3 -S -emit-llvm $TEST.c -o $OUT -mllvm -polly -mllvm -polly-pattern-matching-based-opts=false -mllvm -polly-vectorizer=none -mllvm -polly-parallel -mllvm -polly-parallel-force -mllvm -polly-omp-backend=LLVM -mllvm -polly-scheduling=static
+      clang $CFLAGS -O3 -S -emit-llvm $TEST.c -mllvm -polly -mllvm -polly-pattern-matching-based-opts=false -mllvm -polly-vectorizer=none -mllvm -polly-parallel -mllvm -polly-parallel-force -mllvm -polly-omp-backend=LLVM -mllvm -polly-scheduling=static -o - -fno-vectorize -fno-unroll-loops | sed 's/llvm.loop.unroll.disable//g' > $OUT
       ;;
 
     pluto)
@@ -71,8 +71,8 @@ function run()
         return
       fi
       # NOTE: in recent version pluto use --tile and --parallel as def.
-      polycc --silent --tile --noparallel --noprevector --nounrolljam $TEST.c -o $TEST.$TOOL.c
-      clang $CFLAGS -O3 -S -emit-llvm $TEST.$TOOL.c -o $OUT
+      polycc --silent --tile --noparallel --noprevector --nounrolljam $TEST.c -o $TEST.$TOOL.c &> /dev/null
+      clang $CFLAGS -O3 -S -emit-llvm $TEST.$TOOL.c -o - -fno-vectorize -fno-unroll-loops | sed 's/llvm.loop.unroll.disable//g' > $OUT
       ;;
 
     plutopar)
@@ -81,21 +81,20 @@ function run()
         RESULT="$TOOL:nan"
         return
       fi
-      polycc --silent --parallel --tile --noprevector --nounrolljam $TEST.c -o $TEST.$TOOL.c
-      clang $CFLAGS -O3 -fopenmp -S -emit-llvm $TEST.$TOOL.c -o $OUT
+      polycc --silent --parallel --tile --noprevector --nounrolljam $TEST.c -o $TEST.$TOOL.c &> /dev/null
+      clang $CFLAGS -O3 -fopenmp -S -emit-llvm $TEST.$TOOL.c -o - -fno-vectorize -fno-unroll-loops | sed 's/llvm.loop.unroll.disable//g' > $OUT
       ;;
 
     polymer)
-
       mlir-clang $CFLAGS $TEST.c -o $TEST.$TOOL.in.mlir
-
+      
       polymer-opt -reg2mem \
       -insert-redundant-load \
       -extract-scop-stmt \
       -canonicalize \
       -pluto-opt="dump-clast-after-pluto=$TEST.$TOOL.cloog" \
       -canonicalize $TEST.$TOOL.in.mlir 2>/dev/null > $TEST.$TOOL.out.mlir
-
+      
       mlir-opt -lower-affine -convert-scf-to-std -canonicalize -convert-std-to-llvm $TEST.$TOOL.out.mlir |\
         mlir-translate -mlir-to-llvmir > $OUT
       ;;
@@ -131,20 +130,18 @@ function run()
 for dir in $dirList; do
   cd "$BASE/$dir"
   for subDir in `ls`; do
-    cd $subDir 
-    
+    cd "$BASE/$dir/$subDir" 
     echo $(pwd)
     for t in $TOOLS; do
       run $t $subDir
     done
 
-#    for i in 1 2 3 4 5; do
-#      for t in $TOOLS; do
-#        time=$(taskset -c 1-8 numactl -i all ./$subDir.$t.exe)
-#	echo $t:$subDir:$time
-#      done
-#    done 
+    for i in 1 2 3 4 5; do
+      for t in $TOOLS; do
+        time=$(taskset -c 1-8 numactl -i all ./$subDir.$t.exe)
+	echo $t:$subDir:$time
+      done
+    done 
 
-    cd ../
   done
 done
