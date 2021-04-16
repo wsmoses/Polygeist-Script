@@ -26,7 +26,6 @@ dirList="linear-algebra/blas
 dirList="linear-algebra/blas
          linear-algebra/kernels
          linear-algebra/solvers"
-
 CFLAGS="-march=native -I $BASE/utilities -I $stdinclude -D POLYBENCH_TIME -D POLYBENCH_NO_FLUSH_CACHE -D EXTRALARGE_DATASET "
 
 #dirList="linear-algebra/blas"
@@ -67,7 +66,6 @@ function run()
     pluto)
       if [[ $2 == "adi" ]]
       then
-        RESULT="$TOOL:nan"
         return
       fi
       # NOTE: in recent version pluto use --tile and --parallel as def.
@@ -78,7 +76,6 @@ function run()
     plutopar)
       if [[ $2 == "adi" ]]
       then
-        RESULT="$TOOL:nan"
         return
       fi
       polycc --silent --parallel --tile --noprevector --nounrolljam $TEST.c -o $TEST.$TOOL.c &> /dev/null
@@ -138,8 +135,13 @@ for dir in $dirList; do
 
     for i in 1 2 3 4 5; do
       for t in $TOOLS; do
-        time=$(taskset -c 1-8 numactl -i all ./$subDir.$t.exe)
-	echo $t:$subDir:$time
+	      if [[ $subDir == "adi" && ( $t == "pluto" || $t == "plutopar" ) ]]
+	      then
+	        echo $t:$subDir:nan
+	      else
+        	time=$(taskset -c 1-8 numactl -i all ./$subDir.$t.exe)
+		echo $t:$subDir:$time
+	      fi
       done
     done 
 
