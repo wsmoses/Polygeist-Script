@@ -1,0 +1,379 @@
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/fdtd-2d
+RUN: clangsing with fdtd-2d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/fdtd-2d
+RUN: clang with fdtd-2d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/fdtd-2d
+RUN: mlir-clang with fdtd-2d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/fdtd-2d
+RUN: polly with fdtd-2d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/fdtd-2d
+RUN: pollypar with fdtd-2d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/fdtd-2d
+RUN: pluto with fdtd-2d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/fdtd-2d
+RUN: plutopar with fdtd-2d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/fdtd-2d
+RUN: polymer with fdtd-2d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/fdtd-2d
+RUN: polymerpar with fdtd-2d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/fdtd-2d
+clangsing:fdtd-2d:26.559016
+clang:fdtd-2d:26.224004
+mlir-clang:fdtd-2d:26.442393
+polly:fdtd-2d:33.605171
+pollypar:fdtd-2d:20.533563
+pluto:fdtd-2d:22.931252
+plutopar:fdtd-2d:3.430093
+polymer:fdtd-2d:17.175897
+polymerpar:fdtd-2d:2.878423
+clangsing:fdtd-2d:26.180925
+clang:fdtd-2d:26.165321
+mlir-clang:fdtd-2d:25.881025
+polly:fdtd-2d:33.657423
+pollypar:fdtd-2d:20.526967
+pluto:fdtd-2d:22.963629
+plutopar:fdtd-2d:3.431690
+polymer:fdtd-2d:17.198303
+polymerpar:fdtd-2d:2.868447
+clangsing:fdtd-2d:26.218986
+clang:fdtd-2d:26.168898
+mlir-clang:fdtd-2d:25.889834
+polly:fdtd-2d:33.649144
+pollypar:fdtd-2d:20.543639
+pluto:fdtd-2d:22.998953
+plutopar:fdtd-2d:3.420562
+polymer:fdtd-2d:17.131792
+polymerpar:fdtd-2d:2.882787
+clangsing:fdtd-2d:26.209685
+clang:fdtd-2d:26.141771
+mlir-clang:fdtd-2d:25.847663
+polly:fdtd-2d:33.634969
+pollypar:fdtd-2d:20.534182
+pluto:fdtd-2d:23.007247
+plutopar:fdtd-2d:3.420758
+polymer:fdtd-2d:17.149448
+polymerpar:fdtd-2d:2.887973
+clangsing:fdtd-2d:26.202948
+clang:fdtd-2d:26.184941
+mlir-clang:fdtd-2d:25.891408
+polly:fdtd-2d:33.603825
+pollypar:fdtd-2d:20.540264
+pluto:fdtd-2d:22.967890
+plutopar:fdtd-2d:3.432777
+polymer:fdtd-2d:17.149888
+polymerpar:fdtd-2d:2.868408
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/heat-3d
+RUN: clangsing with heat-3d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/heat-3d
+RUN: clang with heat-3d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/heat-3d
+RUN: mlir-clang with heat-3d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/heat-3d
+RUN: polly with heat-3d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/heat-3d
+RUN: pollypar with heat-3d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/heat-3d
+RUN: pluto with heat-3d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/heat-3d
+RUN: plutopar with heat-3d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/heat-3d
+RUN: polymer with heat-3d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/heat-3d
+RUN: polymerpar with heat-3d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/heat-3d
+clangsing:heat-3d:41.064370
+clang:heat-3d:41.114662
+mlir-clang:heat-3d:32.633419
+polly:heat-3d:85.777610
+pollypar:heat-3d:15.036087
+pluto:heat-3d:19.845852
+plutopar:heat-3d:3.535345
+polymer:heat-3d:20.970160
+polymerpar:heat-3d:3.942987
+clangsing:heat-3d:41.115424
+clang:heat-3d:41.021466
+mlir-clang:heat-3d:32.626910
+polly:heat-3d:86.019010
+pollypar:heat-3d:15.021173
+pluto:heat-3d:19.823371
+plutopar:heat-3d:3.550737
+polymer:heat-3d:20.993795
+polymerpar:heat-3d:3.943132
+clangsing:heat-3d:41.141545
+clang:heat-3d:41.027050
+mlir-clang:heat-3d:32.627218
+polly:heat-3d:85.915357
+pollypar:heat-3d:14.984915
+pluto:heat-3d:19.841609
+plutopar:heat-3d:3.549537
+polymer:heat-3d:20.972262
+polymerpar:heat-3d:3.937313
+clangsing:heat-3d:41.032601
+clang:heat-3d:41.060096
+mlir-clang:heat-3d:32.617188
+polly:heat-3d:85.987065
+pollypar:heat-3d:15.048153
+pluto:heat-3d:19.821451
+plutopar:heat-3d:3.555003
+polymer:heat-3d:21.010385
+polymerpar:heat-3d:3.940081
+clangsing:heat-3d:40.936529
+clang:heat-3d:41.042712
+mlir-clang:heat-3d:32.624463
+polly:heat-3d:85.895910
+pollypar:heat-3d:15.022160
+pluto:heat-3d:19.881883
+plutopar:heat-3d:3.553005
+polymer:heat-3d:21.000374
+polymerpar:heat-3d:3.943102
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/jacobi-1d
+RUN: clangsing with jacobi-1d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/jacobi-1d
+RUN: clang with jacobi-1d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/jacobi-1d
+RUN: mlir-clang with jacobi-1d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/jacobi-1d
+RUN: polly with jacobi-1d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/jacobi-1d
+RUN: pollypar with jacobi-1d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/jacobi-1d
+RUN: pluto with jacobi-1d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/jacobi-1d
+RUN: plutopar with jacobi-1d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/jacobi-1d
+RUN: polymer with jacobi-1d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/jacobi-1d
+RUN: polymerpar with jacobi-1d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/jacobi-1d
+clangsing:jacobi-1d:0.016553
+clang:jacobi-1d:0.007996
+mlir-clang:jacobi-1d:0.006350
+polly:jacobi-1d:0.006404
+pollypar:jacobi-1d:0.006970
+pluto:jacobi-1d:0.012751
+plutopar:jacobi-1d:0.008494
+polymer:jacobi-1d:0.009815
+polymerpar:jacobi-1d:0.007184
+clangsing:jacobi-1d:0.006935
+clang:jacobi-1d:0.005090
+mlir-clang:jacobi-1d:0.004480
+polly:jacobi-1d:0.005019
+pollypar:jacobi-1d:0.006066
+pluto:jacobi-1d:0.012769
+plutopar:jacobi-1d:0.007609
+polymer:jacobi-1d:0.009517
+polymerpar:jacobi-1d:0.006978
+clangsing:jacobi-1d:0.007425
+clang:jacobi-1d:0.005015
+mlir-clang:jacobi-1d:0.004516
+polly:jacobi-1d:0.005018
+pollypar:jacobi-1d:0.006035
+pluto:jacobi-1d:0.012761
+plutopar:jacobi-1d:0.007853
+polymer:jacobi-1d:0.009523
+polymerpar:jacobi-1d:0.006978
+clangsing:jacobi-1d:0.006702
+clang:jacobi-1d:0.005019
+mlir-clang:jacobi-1d:0.004647
+polly:jacobi-1d:0.005589
+pollypar:jacobi-1d:0.006278
+pluto:jacobi-1d:0.012784
+plutopar:jacobi-1d:0.007847
+polymer:jacobi-1d:0.009512
+polymerpar:jacobi-1d:0.006949
+clangsing:jacobi-1d:0.006703
+clang:jacobi-1d:0.005019
+mlir-clang:jacobi-1d:0.004475
+polly:jacobi-1d:0.005038
+pollypar:jacobi-1d:0.006223
+pluto:jacobi-1d:0.012760
+plutopar:jacobi-1d:0.007842
+polymer:jacobi-1d:0.009511
+polymerpar:jacobi-1d:0.006981
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/jacobi-2d
+RUN: clangsing with jacobi-2d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/jacobi-2d
+RUN: clang with jacobi-2d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/jacobi-2d
+RUN: mlir-clang with jacobi-2d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/jacobi-2d
+RUN: polly with jacobi-2d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/jacobi-2d
+RUN: pollypar with jacobi-2d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/jacobi-2d
+RUN: pluto with jacobi-2d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/jacobi-2d
+RUN: plutopar with jacobi-2d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/jacobi-2d
+RUN: polymer with jacobi-2d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/jacobi-2d
+RUN: polymerpar with jacobi-2d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/jacobi-2d
+clangsing:jacobi-2d:24.345368
+clang:jacobi-2d:24.378627
+mlir-clang:jacobi-2d:24.484017
+polly:jacobi-2d:77.367851
+pollypar:jacobi-2d:10.034600
+pluto:jacobi-2d:11.655036
+plutopar:jacobi-2d:1.671539
+polymer:jacobi-2d:22.792572
+polymerpar:jacobi-2d:3.086043
+clangsing:jacobi-2d:24.362230
+clang:jacobi-2d:24.373517
+mlir-clang:jacobi-2d:24.481430
+polly:jacobi-2d:77.317137
+pollypar:jacobi-2d:9.977093
+pluto:jacobi-2d:11.669836
+plutopar:jacobi-2d:1.678977
+polymer:jacobi-2d:22.715095
+polymerpar:jacobi-2d:3.108445
+clangsing:jacobi-2d:24.371475
+clang:jacobi-2d:24.375245
+mlir-clang:jacobi-2d:24.486560
+polly:jacobi-2d:77.264884
+pollypar:jacobi-2d:10.037200
+pluto:jacobi-2d:11.583392
+plutopar:jacobi-2d:1.675031
+polymer:jacobi-2d:22.642068
+polymerpar:jacobi-2d:3.082117
+clangsing:jacobi-2d:24.371734
+clang:jacobi-2d:24.377799
+mlir-clang:jacobi-2d:24.479566
+polly:jacobi-2d:77.390377
+pollypar:jacobi-2d:10.002521
+pluto:jacobi-2d:11.564687
+plutopar:jacobi-2d:1.671795
+polymer:jacobi-2d:22.690207
+polymerpar:jacobi-2d:3.117171
+clangsing:jacobi-2d:24.382898
+clang:jacobi-2d:24.372524
+mlir-clang:jacobi-2d:24.511231
+polly:jacobi-2d:77.305552
+pollypar:jacobi-2d:9.982444
+pluto:jacobi-2d:11.570313
+plutopar:jacobi-2d:1.668712
+polymer:jacobi-2d:22.603305
+polymerpar:jacobi-2d:3.154850
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/seidel-2d
+RUN: clangsing with seidel-2d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/seidel-2d
+RUN: clang with seidel-2d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/seidel-2d
+RUN: mlir-clang with seidel-2d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/seidel-2d
+RUN: polly with seidel-2d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/seidel-2d
+RUN: pollypar with seidel-2d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/seidel-2d
+RUN: pluto with seidel-2d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/seidel-2d
+RUN: plutopar with seidel-2d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/seidel-2d
+RUN: polymer with seidel-2d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/seidel-2d
+RUN: polymerpar with seidel-2d in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/stencils/seidel-2d
+clangsing:seidel-2d:202.373272
+clang:seidel-2d:202.327573
+mlir-clang:seidel-2d:202.329634
+polly:seidel-2d:202.335996
+pollypar:seidel-2d:202.365017
+pluto:seidel-2d:239.196906
+plutopar:seidel-2d:33.955360
+polymer:seidel-2d:163.168553
+polymerpar:seidel-2d:23.371885
+clangsing:seidel-2d:202.375257
+clang:seidel-2d:202.329137
+mlir-clang:seidel-2d:202.323279
+polly:seidel-2d:202.338057
+pollypar:seidel-2d:202.371489
+pluto:seidel-2d:239.191756
+plutopar:seidel-2d:33.952957
+polymer:seidel-2d:163.169392
+polymerpar:seidel-2d:23.417932
+clangsing:seidel-2d:202.368912
+clang:seidel-2d:202.329845
+mlir-clang:seidel-2d:202.325970
+polly:seidel-2d:202.337452
+pollypar:seidel-2d:202.368958
+pluto:seidel-2d:239.188266
+plutopar:seidel-2d:33.953981
+polymer:seidel-2d:163.169891
+polymerpar:seidel-2d:23.395987
+clangsing:seidel-2d:202.364324
+clang:seidel-2d:202.330203
+mlir-clang:seidel-2d:202.321301
+polly:seidel-2d:202.338746
+pollypar:seidel-2d:202.368550
+pluto:seidel-2d:239.198377
+plutopar:seidel-2d:33.954758
+polymer:seidel-2d:165.717163
+polymerpar:seidel-2d:23.419250
+clangsing:seidel-2d:202.364949
+clang:seidel-2d:202.328007
+mlir-clang:seidel-2d:202.326355
+polly:seidel-2d:202.337493
+pollypar:seidel-2d:202.364685
+pluto:seidel-2d:239.191212
+plutopar:seidel-2d:33.955746
+polymer:seidel-2d:163.170663
+polymerpar:seidel-2d:23.396889
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/medley/deriche
+RUN: clangsing with deriche in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/medley/deriche
+RUN: clang with deriche in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/medley/deriche
+RUN: mlir-clang with deriche in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/medley/deriche
+RUN: polly with deriche in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/medley/deriche
+RUN: pollypar with deriche in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/medley/deriche
+RUN: pluto with deriche in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/medley/deriche
+RUN: plutopar with deriche in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/medley/deriche
+RUN: polymer with deriche in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/medley/deriche
+RUN: polymerpar with deriche in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/medley/deriche
+clangsing:deriche:1.700297
+clang:deriche:1.699485
+mlir-clang:deriche:1.699175
+polly:deriche:1.888689
+pollypar:deriche:1.662352
+pluto:deriche:1.880095
+plutopar:deriche:1.659716
+polymer:deriche:1.873548
+polymerpar:deriche:0.248130
+clangsing:deriche:1.700364
+clang:deriche:1.700382
+mlir-clang:deriche:1.698532
+polly:deriche:1.888426
+pollypar:deriche:1.657440
+pluto:deriche:1.870460
+plutopar:deriche:1.666252
+polymer:deriche:1.873816
+polymerpar:deriche:0.246660
+clangsing:deriche:1.701558
+clang:deriche:1.699973
+mlir-clang:deriche:1.699234
+polly:deriche:1.889462
+pollypar:deriche:1.655944
+pluto:deriche:1.871079
+plutopar:deriche:1.654100
+polymer:deriche:1.874111
+polymerpar:deriche:0.247386
+clangsing:deriche:1.713157
+clang:deriche:1.703315
+mlir-clang:deriche:1.700531
+polly:deriche:1.889164
+pollypar:deriche:1.657856
+pluto:deriche:1.870344
+plutopar:deriche:1.653751
+polymer:deriche:1.875388
+polymerpar:deriche:0.246416
+clangsing:deriche:1.700062
+clang:deriche:1.705842
+mlir-clang:deriche:1.713750
+polly:deriche:1.897720
+pollypar:deriche:1.656152
+pluto:deriche:1.876860
+plutopar:deriche:1.654644
+polymer:deriche:1.873247
+polymerpar:deriche:0.247411
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/medley/floyd-warshall
+RUN: clangsing with floyd-warshall in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/medley/floyd-warshall
+RUN: clang with floyd-warshall in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/medley/floyd-warshall
+RUN: mlir-clang with floyd-warshall in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/medley/floyd-warshall
+RUN: polly with floyd-warshall in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/medley/floyd-warshall
+RUN: pollypar with floyd-warshall in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/medley/floyd-warshall
+RUN: pluto with floyd-warshall in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/medley/floyd-warshall
+RUN: plutopar with floyd-warshall in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/medley/floyd-warshall
+RUN: polymer with floyd-warshall in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/medley/floyd-warshall
+RUN: polymerpar with floyd-warshall in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/medley/floyd-warshall
+clangsing:floyd-warshall:151.884125
+clang:floyd-warshall:166.309527
+mlir-clang:floyd-warshall:146.511484
+polly:floyd-warshall:1934.367244
+pollypar:floyd-warshall:297.482397
+pluto:floyd-warshall:277.345790
+plutopar:floyd-warshall:61.180843
+polymer:floyd-warshall:335.445188
+polymerpar:floyd-warshall:46.571327
+clangsing:floyd-warshall:151.517425
+clang:floyd-warshall:166.567228
+mlir-clang:floyd-warshall:145.603479
+polly:floyd-warshall:1927.026511
+pollypar:floyd-warshall:294.503149
+pluto:floyd-warshall:285.618240
+plutopar:floyd-warshall:61.029010
+polymer:floyd-warshall:337.421714
+polymerpar:floyd-warshall:46.536709
+clangsing:floyd-warshall:151.942125
+clang:floyd-warshall:166.632991
+mlir-clang:floyd-warshall:145.703830
+polly:floyd-warshall:1929.573323
+pollypar:floyd-warshall:295.123275
+pluto:floyd-warshall:289.801186
+plutopar:floyd-warshall:61.168862
+polymer:floyd-warshall:337.372650
+polymerpar:floyd-warshall:46.542778
+clangsing:floyd-warshall:151.466479
+clang:floyd-warshall:166.305082
+mlir-clang:floyd-warshall:146.314250
+polly:floyd-warshall:1929.846546
+pollypar:floyd-warshall:298.047680
+pluto:floyd-warshall:288.897248
+plutopar:floyd-warshall:60.969395
+polymer:floyd-warshall:336.392329
+polymerpar:floyd-warshall:46.507339
+clangsing:floyd-warshall:152.015369
+clang:floyd-warshall:166.530024
+mlir-clang:floyd-warshall:145.832527

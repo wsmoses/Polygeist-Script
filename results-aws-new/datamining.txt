@@ -1,0 +1,110 @@
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/datamining/correlation
+RUN: clangsing with correlation in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/datamining/correlation
+RUN: clang with correlation in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/datamining/correlation
+RUN: mlir-clang with correlation in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/datamining/correlation
+RUN: polly with correlation in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/datamining/correlation
+RUN: pollypar with correlation in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/datamining/correlation
+RUN: pluto with correlation in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/datamining/correlation
+RUN: plutopar with correlation in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/datamining/correlation
+RUN: polymer with correlation in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/datamining/correlation
+RUN: polymerpar with correlation in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/datamining/correlation
+clangsing:correlation:95.390710
+clang:correlation:95.177545
+mlir-clang:correlation:95.219569
+polly:correlation:8.967563
+pollypar:correlation:2.328286
+pluto:correlation:3.852170
+plutopar:correlation:1.091751
+polymer:correlation:3.826629
+polymerpar:correlation:1.133958
+clangsing:correlation:95.354334
+clang:correlation:95.204345
+mlir-clang:correlation:95.242538
+polly:correlation:8.961062
+pollypar:correlation:2.331416
+pluto:correlation:3.850507
+plutopar:correlation:1.093965
+polymer:correlation:3.701772
+polymerpar:correlation:1.138282
+clangsing:correlation:95.362465
+clang:correlation:95.241933
+mlir-clang:correlation:95.214982
+polly:correlation:8.964463
+pollypar:correlation:2.331895
+pluto:correlation:3.850066
+plutopar:correlation:1.088439
+polymer:correlation:3.702601
+polymerpar:correlation:1.137213
+clangsing:correlation:95.470783
+clang:correlation:95.173364
+mlir-clang:correlation:95.178008
+polly:correlation:8.960372
+pollypar:correlation:2.330181
+pluto:correlation:3.850575
+plutopar:correlation:1.091046
+polymer:correlation:3.703017
+polymerpar:correlation:1.138862
+clangsing:correlation:95.363875
+clang:correlation:95.229434
+mlir-clang:correlation:95.193549
+polly:correlation:8.966051
+pollypar:correlation:2.332310
+pluto:correlation:3.993049
+plutopar:correlation:1.092341
+polymer:correlation:3.721476
+polymerpar:correlation:1.137702
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/datamining/covariance
+RUN: clangsing with covariance in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/datamining/covariance
+RUN: clang with covariance in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/datamining/covariance
+RUN: mlir-clang with covariance in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/datamining/covariance
+RUN: polly with covariance in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/datamining/covariance
+RUN: pollypar with covariance in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/datamining/covariance
+RUN: pluto with covariance in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/datamining/covariance
+RUN: plutopar with covariance in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/datamining/covariance
+RUN: polymer with covariance in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/datamining/covariance
+RUN: polymerpar with covariance in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/datamining/covariance
+clangsing:covariance:95.400266
+clang:covariance:95.286553
+mlir-clang:covariance:95.183044
+polly:covariance:8.924257
+pollypar:covariance:2.264375
+pluto:covariance:3.798293
+plutopar:covariance:1.093559
+polymer:covariance:3.783146
+polymerpar:covariance:1.041393
+clangsing:covariance:95.362875
+clang:covariance:95.184320
+mlir-clang:covariance:95.207117
+polly:covariance:8.921448
+pollypar:covariance:2.269404
+pluto:covariance:3.814593
+plutopar:covariance:1.094540
+polymer:covariance:3.795878
+polymerpar:covariance:1.044789
+clangsing:covariance:95.384630
+clang:covariance:95.155422
+mlir-clang:covariance:95.187563
+polly:covariance:8.927256
+pollypar:covariance:2.265144
+pluto:covariance:3.800202
+plutopar:covariance:1.092081
+polymer:covariance:3.797051
+polymerpar:covariance:1.042916
+clangsing:covariance:95.407047
+clang:covariance:95.209837
+mlir-clang:covariance:95.198032
+polly:covariance:8.920770
+pollypar:covariance:2.266944
+pluto:covariance:3.809921
+plutopar:covariance:1.096161
+polymer:covariance:3.782269
+polymerpar:covariance:1.040749
+clangsing:covariance:95.392725
+clang:covariance:95.153538
+mlir-clang:covariance:95.194753
+polly:covariance:8.927806
+pollypar:covariance:2.266176
+pluto:covariance:3.799002
+plutopar:covariance:1.089333
+polymer:covariance:3.781714
+polymerpar:covariance:1.040680
