@@ -5,7 +5,9 @@ Pluto Deps:
 
 Install Pluto:
 `$ git clone git://repo.or.cz/pluto.git $ cd pluto/ $ git submodule init $ git submodule update $ ./autogen.sh $ ./configure`
+
 `$ cd pluto`
+
 `$ git reset --hard dae26e77b94b2624a540c08ec7128f20cd7b7985`
 
 Install mlir-clang (now called Polygeist)
@@ -13,7 +15,9 @@ Install mlir-clang (now called Polygeist)
 
 Build mlir-clang
 `$ mkdir llvm-project/build`
+
 `$ cd llvm-project/build`
+
 `$ cmake -G Ninja ../llvm \
    -DLLVM_ENABLE_PROJECTS=mlir;polly;clang;openmp \
    -DLLVM_BUILD_EXAMPLES=ON \
