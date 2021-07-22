@@ -2,35 +2,39 @@
 
 Pluto Deps:
 
-`$ sudo apt-get install pkg-config git libtool autoconf flex bison libgmp3-dev texinfo llvm-dev libclang-dev texlive-full`
+```
+$ sudo apt-get install pkg-config git libtool autoconf flex bison libgmp3-dev texinfo llvm-dev libclang-dev texlive-full
+```
 
 Install Pluto:
 
-`$ git clone git://repo.or.cz/pluto.git` 
+```
+$ git clone git://repo.or.cz/pluto.git
 
-`$ cd pluto/`
+$ cd pluto/
 
-`$ git reset --hard dae26e77b94b2624a540c08ec7128f20cd7b7985`
+$ git reset --hard dae26e77b94b2624a540c08ec7128f20cd7b7985
 
-`$ git submodule init` 
+$ git submodule init
 
-`$ git submodule update` 
+$ git submodule update
 
-`$ ./autogen.sh` 
+$ ./autogen.sh
 
-`$ ./configure`
+$ ./configure
+```
 
 Install mlir-clang (now called Polygeist):
 
-`$ git clone -b main-042621 --single-branch https://github.com/wsmoses/Polygeist`
+```
+$ git clone -b main-042621 --single-branch https://github.com/wsmoses/Polygeist
+```
 
 Build mlir-clang:
 
-`$ mkdir llvm-project/build`
-
-`$ cd llvm-project/build`
-
 ```
+$ mkdir llvm-project/build`
+$ cd llvm-project/build`
 $ cmake -G Ninja ../llvm \
    -DLLVM_ENABLE_PROJECTS=mlir;polly;clang;openmp \
    -DLLVM_BUILD_EXAMPLES=ON \
