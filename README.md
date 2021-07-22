@@ -6,11 +6,19 @@ Pluto Deps:
 
 Install Pluto:
 
-`$ git clone git://repo.or.cz/pluto.git $ cd pluto/ $ git submodule init $ git submodule update $ ./autogen.sh $ ./configure`
+`$ git clone git://repo.or.cz/pluto.git` 
 
-`$ cd pluto`
+`$ cd pluto/`
 
 `$ git reset --hard dae26e77b94b2624a540c08ec7128f20cd7b7985`
+
+`$ git submodule init` 
+
+`$ git submodule update` 
+
+`$ ./autogen.sh` 
+
+`$ ./configure`
 
 Install mlir-clang (now called Polygeist):
 
