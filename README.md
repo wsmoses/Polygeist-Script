@@ -42,6 +42,8 @@ $ cmake -G Ninja ../llvm \
    -DLLVM_TARGETS_TO_BUILD="X86;NVPTX;AMDGPU" \
    -DCMAKE_BUILD_TYPE=Release \
    -DLLVM_ENABLE_ASSERTIONS=ON \  
+   
+# Copy the omp.h file from this repo to the build directory of mlir-clang
  ```
 
 Pull polymer
@@ -92,9 +94,13 @@ LD_LIBRARY_PATH=$PWD/pluto/lib:$LD_LIBRARY_PATH ninja check-polymer
 
 ```
 
-How to run:
-1. See Pluto Deps and Install Pluto.
-2. See Install and build mlir-clang
-3. patch omp.h in the build directory
-4. run hyper.sh
-5. run run.sh in polybench directory
+Run scripts
+
+```
+$ git clone https://github.com/wsmoses/Polygeist-Script.git scripts
+$ cd scripts
+$ cd polybench-c-4.2.1-beta
+$ hyper.sh
+# change path on script run.sh based on your installation
+$ run.sh
+```
