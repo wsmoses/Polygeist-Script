@@ -81,3 +81,27 @@ RUN cd polymer \
       -DCMAKE_CXX_COMPILER=clang++ \
       -G Ninja 
 RUN cd polymer/llvm/build && ninja -j$(nproc)
+RUN cd polymer && rm -rf build && mkdir -p build && cd build \
+	&& cmake .. \
+		  -DCMAKE_BUILD_TYPE=DEBUG \
+		  -DMLIR_DIR=$PWD/../llvm/build/lib/cmake/mlir \
+		  -DLLVM_DIR=$PWD/../llvm/build/lib/cmake/llvm \
+		  -DLLVM_ENABLE_ASSERTIONS=ON \
+		  -DCMAKE_C_COMPILER=clang-9 \
+		  -DCMAKE_CXX_COMPILER=clang++-9 \
+		  -DLLVM_EXTERNAL_LIT=${PWD}/../llvm/build/bin/llvm-lit \
+		  -G Ninja
+RUN cd polymer/build && ninja 
+
+# Download the script repository, and you're all set!
+RUN git clone https://github.com/wsmoses/Polygeist-Script
+
+# Update with the new OpenMP header file
+RUN cp Polygeist-Script/omp.h mlir-clang/build/projects/openmp/runtime/src/
+
+# Dealing with the fixed file path in the run script
+RUN ln -s $HOME/workspace/polymer $HOME/polymer
+RUN ln -s $HOME/workspace/mlir-clang $HOME/mlir-gpu
+RUN ln -s $HOME/workspace/pluto $HOME/pluto
+
+RUN sudo apt-get install numactl --yes
