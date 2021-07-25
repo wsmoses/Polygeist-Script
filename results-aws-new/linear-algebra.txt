@@ -1,0 +1,1045 @@
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gemm
+RUN: clangsing with gemm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gemm
+RUN: clang with gemm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gemm
+RUN: mlir-clang with gemm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gemm
+RUN: polly with gemm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gemm
+RUN: pollypar with gemm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gemm
+RUN: pluto with gemm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gemm
+RUN: plutopar with gemm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gemm
+RUN: polymer with gemm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gemm
+RUN: polymerpar with gemm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gemm
+clangsing:gemm:8.426013
+clang:gemm:8.295132
+mlir-clang:gemm:8.292858
+polly:gemm:10.108727
+pollypar:gemm:1.304519
+pluto:gemm:3.935303
+plutopar:gemm:0.605363
+polymer:gemm:3.873384
+polymerpar:gemm:0.560837
+clangsing:gemm:8.402758
+clang:gemm:8.293301
+mlir-clang:gemm:8.292380
+polly:gemm:10.106005
+pollypar:gemm:1.304718
+pluto:gemm:3.935461
+plutopar:gemm:0.602536
+polymer:gemm:3.871017
+polymerpar:gemm:0.565625
+clangsing:gemm:8.404910
+clang:gemm:8.273110
+mlir-clang:gemm:8.305497
+polly:gemm:10.104144
+pollypar:gemm:1.304498
+pluto:gemm:3.945600
+plutopar:gemm:0.610833
+polymer:gemm:3.876955
+polymerpar:gemm:0.565976
+clangsing:gemm:8.405712
+clang:gemm:8.311045
+mlir-clang:gemm:8.298201
+polly:gemm:10.104869
+pollypar:gemm:1.304581
+pluto:gemm:3.929485
+plutopar:gemm:0.602495
+polymer:gemm:3.881645
+polymerpar:gemm:0.563622
+clangsing:gemm:8.397656
+clang:gemm:8.299307
+mlir-clang:gemm:8.296821
+polly:gemm:10.105856
+pollypar:gemm:1.325686
+pluto:gemm:3.940822
+plutopar:gemm:0.602154
+polymer:gemm:3.865722
+polymerpar:gemm:0.560754
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gemver
+RUN: clangsing with gemver in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gemver
+RUN: clang with gemver in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gemver
+RUN: mlir-clang with gemver in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gemver
+RUN: polly with gemver in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gemver
+RUN: pollypar with gemver in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gemver
+RUN: pluto with gemver in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gemver
+RUN: plutopar with gemver in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gemver
+RUN: polymer with gemver in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gemver
+RUN: polymerpar with gemver in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gemver
+clangsing:gemver:0.161161
+clang:gemver:0.160942
+mlir-clang:gemver:0.160773
+polly:gemver:0.072825
+pollypar:gemver:0.018794
+pluto:gemver:0.068040
+plutopar:gemver:0.029037
+polymer:gemver:0.066745
+polymerpar:gemver:0.022634
+clangsing:gemver:0.161717
+clang:gemver:0.160401
+mlir-clang:gemver:0.161559
+polly:gemver:0.072736
+pollypar:gemver:0.018784
+pluto:gemver:0.067472
+plutopar:gemver:0.029304
+polymer:gemver:0.067399
+polymerpar:gemver:0.022885
+clangsing:gemver:0.161488
+clang:gemver:0.160502
+mlir-clang:gemver:0.160912
+polly:gemver:0.072506
+pollypar:gemver:0.019147
+pluto:gemver:0.068052
+plutopar:gemver:0.029700
+polymer:gemver:0.067510
+polymerpar:gemver:0.023235
+clangsing:gemver:0.161522
+clang:gemver:0.160983
+mlir-clang:gemver:0.160443
+polly:gemver:0.072513
+pollypar:gemver:0.019306
+pluto:gemver:0.067519
+plutopar:gemver:0.029872
+polymer:gemver:0.067675
+polymerpar:gemver:0.023233
+clangsing:gemver:0.162216
+clang:gemver:0.160430
+mlir-clang:gemver:0.160801
+polly:gemver:0.072455
+pollypar:gemver:0.019647
+pluto:gemver:0.067914
+plutopar:gemver:0.029918
+polymer:gemver:0.067395
+polymerpar:gemver:0.023021
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gesummv
+RUN: clangsing with gesummv in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gesummv
+RUN: clang with gesummv in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gesummv
+RUN: mlir-clang with gesummv in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gesummv
+RUN: polly with gesummv in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gesummv
+RUN: pollypar with gesummv in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gesummv
+RUN: pluto with gesummv in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gesummv
+RUN: plutopar with gesummv in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gesummv
+RUN: polymer with gesummv in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gesummv
+RUN: polymerpar with gesummv in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/gesummv
+clangsing:gesummv:0.013817
+clang:gesummv:0.014639
+mlir-clang:gesummv:0.014074
+polly:gesummv:0.014039
+pollypar:gesummv:0.025819
+pluto:gesummv:0.045067
+plutopar:gesummv:0.010222
+polymer:gesummv:0.035495
+polymerpar:gesummv:0.009435
+clangsing:gesummv:0.013829
+clang:gesummv:0.014648
+mlir-clang:gesummv:0.014025
+polly:gesummv:0.014002
+pollypar:gesummv:0.026122
+pluto:gesummv:0.044972
+plutopar:gesummv:0.010264
+polymer:gesummv:0.035496
+polymerpar:gesummv:0.009405
+clangsing:gesummv:0.013830
+clang:gesummv:0.014660
+mlir-clang:gesummv:0.014044
+polly:gesummv:0.014003
+pollypar:gesummv:0.026539
+pluto:gesummv:0.044981
+plutopar:gesummv:0.010241
+polymer:gesummv:0.035628
+polymerpar:gesummv:0.009402
+clangsing:gesummv:0.013807
+clang:gesummv:0.014652
+mlir-clang:gesummv:0.014055
+polly:gesummv:0.014018
+pollypar:gesummv:0.025628
+pluto:gesummv:0.045092
+plutopar:gesummv:0.010205
+polymer:gesummv:0.035620
+polymerpar:gesummv:0.009417
+clangsing:gesummv:0.013832
+clang:gesummv:0.014633
+mlir-clang:gesummv:0.014024
+polly:gesummv:0.014004
+pollypar:gesummv:0.025290
+pluto:gesummv:0.045032
+plutopar:gesummv:0.010235
+polymer:gesummv:0.035460
+polymerpar:gesummv:0.009388
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/symm
+RUN: clangsing with symm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/symm
+RUN: clang with symm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/symm
+RUN: mlir-clang with symm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/symm
+RUN: polly with symm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/symm
+RUN: pollypar with symm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/symm
+RUN: pluto with symm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/symm
+RUN: plutopar with symm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/symm
+RUN: polymer with symm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/symm
+RUN: polymerpar with symm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/symm
+clangsing:symm:56.134874
+clang:symm:56.288589
+mlir-clang:symm:56.225147
+polly:symm:55.867786
+pollypar:symm:56.371141
+pluto:symm:55.864642
+plutopar:symm:56.003500
+polymer:symm:55.832619
+polymerpar:symm:7.272485
+clangsing:symm:56.136054
+clang:symm:56.296672
+mlir-clang:symm:56.131963
+polly:symm:55.875003
+pollypar:symm:56.330424
+pluto:symm:55.877563
+plutopar:symm:55.981626
+polymer:symm:55.956973
+polymerpar:symm:7.264569
+clangsing:symm:56.123696
+clang:symm:56.169679
+mlir-clang:symm:56.203042
+polly:symm:55.866553
+pollypar:symm:56.315081
+pluto:symm:55.998765
+plutopar:symm:55.854701
+polymer:symm:55.844259
+polymerpar:symm:7.280630
+clangsing:symm:56.213038
+clang:symm:56.338781
+mlir-clang:symm:56.203447
+polly:symm:55.998974
+pollypar:symm:56.425908
+pluto:symm:55.986737
+plutopar:symm:56.056539
+polymer:symm:56.035799
+polymerpar:symm:7.272912
+clangsing:symm:56.200299
+clang:symm:56.176439
+mlir-clang:symm:56.329034
+polly:symm:55.901161
+pollypar:symm:56.321807
+pluto:symm:55.991093
+plutopar:symm:55.981876
+polymer:symm:55.861371
+polymerpar:symm:7.285910
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/syr2k
+RUN: clangsing with syr2k in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/syr2k
+RUN: clang with syr2k in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/syr2k
+RUN: mlir-clang with syr2k in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/syr2k
+RUN: polly with syr2k in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/syr2k
+RUN: pollypar with syr2k in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/syr2k
+RUN: pluto with syr2k in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/syr2k
+RUN: plutopar with syr2k in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/syr2k
+RUN: polymer with syr2k in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/syr2k
+RUN: polymerpar with syr2k in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/syr2k
+clangsing:syr2k:74.219624
+clang:syr2k:74.075469
+mlir-clang:syr2k:74.190133
+polly:syr2k:9.654904
+pollypar:syr2k:2.002328
+pluto:syr2k:9.659378
+plutopar:syr2k:2.339735
+polymer:syr2k:9.601118
+polymerpar:syr2k:2.082815
+clangsing:syr2k:74.425407
+clang:syr2k:73.859703
+mlir-clang:syr2k:73.903425
+polly:syr2k:9.657826
+pollypar:syr2k:2.003572
+pluto:syr2k:9.658748
+plutopar:syr2k:2.346481
+polymer:syr2k:9.585881
+polymerpar:syr2k:2.092979
+clangsing:syr2k:74.367356
+clang:syr2k:74.123507
+mlir-clang:syr2k:74.186994
+polly:syr2k:9.648610
+pollypar:syr2k:2.006441
+pluto:syr2k:9.650877
+plutopar:syr2k:2.335016
+polymer:syr2k:9.605886
+polymerpar:syr2k:2.093055
+clangsing:syr2k:74.297760
+clang:syr2k:73.897600
+mlir-clang:syr2k:73.929550
+polly:syr2k:9.667034
+pollypar:syr2k:2.004590
+pluto:syr2k:9.658280
+plutopar:syr2k:2.345207
+polymer:syr2k:9.609346
+polymerpar:syr2k:2.087047
+clangsing:syr2k:74.024340
+clang:syr2k:73.750900
+mlir-clang:syr2k:74.321882
+polly:syr2k:9.656487
+pollypar:syr2k:2.003833
+pluto:syr2k:9.662741
+plutopar:syr2k:2.345840
+polymer:syr2k:9.604229
+polymerpar:syr2k:2.093098
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/syrk
+RUN: clangsing with syrk in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/syrk
+RUN: clang with syrk in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/syrk
+RUN: mlir-clang with syrk in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/syrk
+RUN: polly with syrk in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/syrk
+RUN: pollypar with syrk in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/syrk
+RUN: pluto with syrk in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/syrk
+RUN: plutopar with syrk in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/syrk
+RUN: polymer with syrk in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/syrk
+RUN: polymerpar with syrk in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/syrk
+clangsing:syrk:26.407454
+clang:syrk:27.179945
+mlir-clang:syrk:26.537950
+polly:syrk:6.318748
+pollypar:syrk:1.361936
+pluto:syrk:6.302629
+plutopar:syrk:1.510258
+polymer:syrk:6.170934
+polymerpar:syrk:1.375100
+clangsing:syrk:26.707983
+clang:syrk:27.170004
+mlir-clang:syrk:26.503072
+polly:syrk:6.320082
+pollypar:syrk:1.362209
+pluto:syrk:6.303607
+plutopar:syrk:1.521139
+polymer:syrk:6.170114
+polymerpar:syrk:1.374911
+clangsing:syrk:26.425326
+clang:syrk:26.759307
+mlir-clang:syrk:26.480373
+polly:syrk:6.318696
+pollypar:syrk:1.361631
+pluto:syrk:6.302149
+plutopar:syrk:1.516378
+polymer:syrk:6.169839
+polymerpar:syrk:1.374611
+clangsing:syrk:26.640037
+clang:syrk:27.194021
+mlir-clang:syrk:27.126035
+polly:syrk:6.320427
+pollypar:syrk:1.360438
+pluto:syrk:6.303180
+plutopar:syrk:1.521204
+polymer:syrk:6.170049
+polymerpar:syrk:1.382247
+clangsing:syrk:26.741198
+clang:syrk:26.730864
+mlir-clang:syrk:26.562693
+polly:syrk:6.319996
+pollypar:syrk:1.361873
+pluto:syrk:6.301909
+plutopar:syrk:1.512969
+polymer:syrk:6.170315
+polymerpar:syrk:1.384628
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/trmm
+RUN: clangsing with trmm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/trmm
+RUN: clang with trmm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/trmm
+RUN: mlir-clang with trmm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/trmm
+RUN: polly with trmm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/trmm
+RUN: pollypar with trmm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/trmm
+RUN: pluto with trmm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/trmm
+RUN: plutopar with trmm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/trmm
+RUN: polymer with trmm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/trmm
+RUN: polymerpar with trmm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/blas/trmm
+clangsing:trmm:47.650579
+clang:trmm:48.001358
+mlir-clang:trmm:48.704464
+polly:trmm:15.251662
+pollypar:trmm:2.061894
+pluto:trmm:1.814188
+plutopar:trmm:0.304431
+polymer:trmm:1.818397
+polymerpar:trmm:0.299899
+clangsing:trmm:47.826098
+clang:trmm:48.232672
+mlir-clang:trmm:47.774562
+polly:trmm:15.479552
+pollypar:trmm:2.049937
+pluto:trmm:1.815939
+plutopar:trmm:0.306423
+polymer:trmm:1.821250
+polymerpar:trmm:0.299706
+clangsing:trmm:48.093661
+clang:trmm:48.697279
+mlir-clang:trmm:48.413654
+polly:trmm:15.405807
+pollypar:trmm:2.070182
+pluto:trmm:1.810739
+plutopar:trmm:0.307112
+polymer:trmm:1.822978
+polymerpar:trmm:0.300078
+clangsing:trmm:48.294835
+clang:trmm:49.024909
+mlir-clang:trmm:48.027892
+polly:trmm:15.461190
+pollypar:trmm:2.055603
+pluto:trmm:1.823652
+plutopar:trmm:0.306282
+polymer:trmm:1.814595
+polymerpar:trmm:0.298536
+clangsing:trmm:48.204019
+clang:trmm:48.410680
+mlir-clang:trmm:48.155768
+polly:trmm:15.472203
+pollypar:trmm:2.064100
+pluto:trmm:1.819240
+plutopar:trmm:0.307561
+polymer:trmm:1.816352
+polymerpar:trmm:0.299834
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/2mm
+RUN: clangsing with 2mm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/2mm
+RUN: clang with 2mm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/2mm
+RUN: mlir-clang with 2mm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/2mm
+RUN: polly with 2mm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/2mm
+RUN: pollypar with 2mm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/2mm
+RUN: pluto with 2mm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/2mm
+RUN: plutopar with 2mm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/2mm
+RUN: polymer with 2mm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/2mm
+RUN: polymerpar with 2mm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/2mm
+clangsing:2mm:65.208734
+clang:2mm:64.498329
+mlir-clang:2mm:64.507659
+polly:2mm:11.341689
+pollypar:2mm:1.619062
+pluto:2mm:3.332694
+plutopar:2mm:0.808588
+polymer:2mm:3.255572
+polymerpar:2mm:0.852385
+clangsing:2mm:65.061361
+clang:2mm:64.618656
+mlir-clang:2mm:64.333416
+polly:2mm:11.347931
+pollypar:2mm:1.619201
+pluto:2mm:3.329420
+plutopar:2mm:0.809166
+polymer:2mm:3.251704
+polymerpar:2mm:0.855138
+clangsing:2mm:65.371750
+clang:2mm:64.675987
+mlir-clang:2mm:64.459682
+polly:2mm:11.345058
+pollypar:2mm:1.618443
+pluto:2mm:3.330423
+plutopar:2mm:0.808259
+polymer:2mm:3.252725
+polymerpar:2mm:0.852099
+clangsing:2mm:65.274453
+clang:2mm:64.933821
+mlir-clang:2mm:64.784880
+polly:2mm:11.348629
+pollypar:2mm:1.618532
+pluto:2mm:3.327658
+plutopar:2mm:0.808271
+polymer:2mm:3.252068
+polymerpar:2mm:0.852209
+clangsing:2mm:65.156526
+clang:2mm:64.443943
+mlir-clang:2mm:64.604119
+polly:2mm:11.344200
+pollypar:2mm:1.619031
+pluto:2mm:3.329107
+plutopar:2mm:0.809630
+polymer:2mm:3.255420
+polymerpar:2mm:0.852483
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/3mm
+RUN: clangsing with 3mm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/3mm
+RUN: clang with 3mm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/3mm
+RUN: mlir-clang with 3mm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/3mm
+RUN: polly with 3mm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/3mm
+RUN: pollypar with 3mm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/3mm
+RUN: pluto with 3mm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/3mm
+RUN: plutopar with 3mm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/3mm
+RUN: polymer with 3mm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/3mm
+RUN: polymerpar with 3mm in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/3mm
+clangsing:3mm:109.741366
+clang:3mm:110.161072
+mlir-clang:3mm:109.873872
+polly:3mm:17.479730
+pollypar:3mm:2.490761
+pluto:3mm:7.122558
+plutopar:3mm:1.205499
+polymer:3mm:6.925545
+polymerpar:3mm:1.262506
+clangsing:3mm:109.801751
+clang:3mm:109.727307
+mlir-clang:3mm:109.778624
+polly:3mm:17.479098
+pollypar:3mm:2.490703
+pluto:3mm:7.127016
+plutopar:3mm:1.206943
+polymer:3mm:6.931573
+polymerpar:3mm:1.262171
+clangsing:3mm:109.579950
+clang:3mm:110.023146
+mlir-clang:3mm:110.226116
+polly:3mm:17.476032
+pollypar:3mm:2.490471
+pluto:3mm:7.120839
+plutopar:3mm:1.204446
+polymer:3mm:6.925632
+polymerpar:3mm:1.262313
+clangsing:3mm:109.780569
+clang:3mm:110.127942
+mlir-clang:3mm:110.238189
+polly:3mm:17.480714
+pollypar:3mm:2.491062
+pluto:3mm:7.135368
+plutopar:3mm:1.205379
+polymer:3mm:6.929749
+polymerpar:3mm:1.262062
+clangsing:3mm:110.039398
+clang:3mm:109.629877
+mlir-clang:3mm:110.153098
+polly:3mm:17.477953
+pollypar:3mm:2.491402
+pluto:3mm:7.135530
+plutopar:3mm:1.205009
+polymer:3mm:6.951227
+polymerpar:3mm:1.262486
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/atax
+RUN: clangsing with atax in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/atax
+RUN: clang with atax in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/atax
+RUN: mlir-clang with atax in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/atax
+RUN: polly with atax in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/atax
+RUN: pollypar with atax in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/atax
+RUN: pluto with atax in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/atax
+RUN: plutopar with atax in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/atax
+RUN: polymer with atax in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/atax
+RUN: polymerpar with atax in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/atax
+clangsing:atax:0.006910
+clang:atax:0.006865
+mlir-clang:atax:0.006815
+polly:atax:0.006737
+pollypar:atax:0.019495
+pluto:atax:0.015253
+plutopar:atax:0.006155
+polymer:atax:0.015096
+polymerpar:atax:0.004813
+clangsing:atax:0.006828
+clang:atax:0.006837
+mlir-clang:atax:0.006801
+polly:atax:0.006767
+pollypar:atax:0.020097
+pluto:atax:0.015212
+plutopar:atax:0.006187
+polymer:atax:0.015082
+polymerpar:atax:0.004740
+clangsing:atax:0.006816
+clang:atax:0.006843
+mlir-clang:atax:0.006800
+polly:atax:0.006746
+pollypar:atax:0.020950
+pluto:atax:0.015688
+plutopar:atax:0.006094
+polymer:atax:0.015009
+polymerpar:atax:0.004773
+clangsing:atax:0.006826
+clang:atax:0.006812
+mlir-clang:atax:0.006801
+polly:atax:0.006782
+pollypar:atax:0.021015
+pluto:atax:0.015209
+plutopar:atax:0.006156
+polymer:atax:0.014989
+polymerpar:atax:0.004614
+clangsing:atax:0.006815
+clang:atax:0.006806
+mlir-clang:atax:0.006809
+polly:atax:0.006770
+pollypar:atax:0.021759
+pluto:atax:0.015255
+plutopar:atax:0.006135
+polymer:atax:0.015130
+polymerpar:atax:0.004723
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/bicg
+RUN: clangsing with bicg in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/bicg
+RUN: clang with bicg in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/bicg
+RUN: mlir-clang with bicg in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/bicg
+RUN: polly with bicg in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/bicg
+RUN: pollypar with bicg in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/bicg
+RUN: pluto with bicg in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/bicg
+RUN: plutopar with bicg in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/bicg
+RUN: polymer with bicg in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/bicg
+RUN: polymerpar with bicg in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/bicg
+clangsing:bicg:0.006179
+clang:bicg:0.006055
+mlir-clang:bicg:0.005965
+polly:bicg:0.005849
+pollypar:bicg:0.010148
+pluto:bicg:0.016442
+plutopar:bicg:0.006213
+polymer:bicg:0.016281
+polymerpar:bicg:0.004978
+clangsing:bicg:0.005928
+clang:bicg:0.005936
+mlir-clang:bicg:0.005947
+polly:bicg:0.005540
+pollypar:bicg:0.009657
+pluto:bicg:0.016417
+plutopar:bicg:0.006120
+polymer:bicg:0.016263
+polymerpar:bicg:0.004841
+clangsing:bicg:0.005928
+clang:bicg:0.005958
+mlir-clang:bicg:0.005965
+polly:bicg:0.006132
+pollypar:bicg:0.010569
+pluto:bicg:0.016479
+plutopar:bicg:0.006190
+polymer:bicg:0.016274
+polymerpar:bicg:0.005032
+clangsing:bicg:0.005923
+clang:bicg:0.005940
+mlir-clang:bicg:0.005930
+polly:bicg:0.006071
+pollypar:bicg:0.009796
+pluto:bicg:0.016546
+plutopar:bicg:0.006182
+polymer:bicg:0.016352
+polymerpar:bicg:0.004693
+clangsing:bicg:0.005936
+clang:bicg:0.005953
+mlir-clang:bicg:0.005944
+polly:bicg:0.005619
+pollypar:bicg:0.010615
+pluto:bicg:0.016392
+plutopar:bicg:0.006220
+polymer:bicg:0.017104
+polymerpar:bicg:0.004947
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/doitgen
+RUN: clangsing with doitgen in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/doitgen
+RUN: clang with doitgen in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/doitgen
+RUN: mlir-clang with doitgen in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/doitgen
+RUN: polly with doitgen in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/doitgen
+RUN: pollypar with doitgen in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/doitgen
+RUN: pluto with doitgen in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/doitgen
+RUN: plutopar with doitgen in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/doitgen
+RUN: polymer with doitgen in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/doitgen
+RUN: polymerpar with doitgen in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/doitgen
+clangsing:doitgen:5.019078
+clang:doitgen:4.866185
+mlir-clang:doitgen:4.853335
+polly:doitgen:4.852666
+pollypar:doitgen:4.854662
+pluto:doitgen:1.376684
+plutopar:doitgen:1.647304
+polymer:doitgen:1.063243
+polymerpar:doitgen:1.881677
+clangsing:doitgen:5.019179
+clang:doitgen:4.859085
+mlir-clang:doitgen:4.853466
+polly:doitgen:4.853471
+pollypar:doitgen:4.854647
+pluto:doitgen:1.407902
+plutopar:doitgen:1.664369
+polymer:doitgen:1.069736
+polymerpar:doitgen:1.922573
+clangsing:doitgen:5.019286
+clang:doitgen:4.855455
+mlir-clang:doitgen:4.853604
+polly:doitgen:4.853157
+pollypar:doitgen:4.854686
+pluto:doitgen:1.375674
+plutopar:doitgen:1.662399
+polymer:doitgen:1.067005
+polymerpar:doitgen:1.869204
+clangsing:doitgen:5.019252
+clang:doitgen:4.858419
+mlir-clang:doitgen:4.864350
+polly:doitgen:4.853823
+pollypar:doitgen:4.861095
+pluto:doitgen:1.615302
+plutopar:doitgen:1.645543
+polymer:doitgen:1.067197
+polymerpar:doitgen:1.918632
+clangsing:doitgen:5.019026
+clang:doitgen:4.927729
+mlir-clang:doitgen:4.853546
+polly:doitgen:4.853577
+pollypar:doitgen:4.854397
+pluto:doitgen:1.397931
+plutopar:doitgen:1.672362
+polymer:doitgen:1.121300
+polymerpar:doitgen:1.963671
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/mvt
+RUN: clangsing with mvt in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/mvt
+RUN: clang with mvt in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/mvt
+RUN: mlir-clang with mvt in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/mvt
+RUN: polly with mvt in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/mvt
+RUN: pollypar with mvt in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/mvt
+RUN: pluto with mvt in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/mvt
+RUN: plutopar with mvt in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/mvt
+RUN: polymer with mvt in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/mvt
+RUN: polymerpar with mvt in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/kernels/mvt
+clangsing:mvt:0.147670
+clang:mvt:0.145055
+mlir-clang:mvt:0.145644
+polly:mvt:0.047619
+pollypar:mvt:0.011594
+pluto:mvt:0.085993
+plutopar:mvt:0.021615
+polymer:mvt:0.085899
+polymerpar:mvt:0.018276
+clangsing:mvt:0.147640
+clang:mvt:0.146333
+mlir-clang:mvt:0.146430
+polly:mvt:0.047756
+pollypar:mvt:0.011568
+pluto:mvt:0.086081
+plutopar:mvt:0.021876
+polymer:mvt:0.085993
+polymerpar:mvt:0.018425
+clangsing:mvt:0.147521
+clang:mvt:0.146244
+mlir-clang:mvt:0.146168
+polly:mvt:0.047601
+pollypar:mvt:0.011518
+pluto:mvt:0.085883
+plutopar:mvt:0.022090
+polymer:mvt:0.086003
+polymerpar:mvt:0.018491
+clangsing:mvt:0.147648
+clang:mvt:0.146634
+mlir-clang:mvt:0.146490
+polly:mvt:0.048001
+pollypar:mvt:0.011652
+pluto:mvt:0.085981
+plutopar:mvt:0.022663
+polymer:mvt:0.085992
+polymerpar:mvt:0.018464
+clangsing:mvt:0.147632
+clang:mvt:0.145961
+mlir-clang:mvt:0.146280
+polly:mvt:0.047520
+pollypar:mvt:0.011513
+pluto:mvt:0.085971
+plutopar:mvt:0.022229
+polymer:mvt:0.086060
+polymerpar:mvt:0.018510
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/cholesky
+RUN: clangsing with cholesky in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/cholesky
+RUN: clang with cholesky in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/cholesky
+RUN: mlir-clang with cholesky in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/cholesky
+RUN: polly with cholesky in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/cholesky
+RUN: pollypar with cholesky in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/cholesky
+RUN: pluto with cholesky in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/cholesky
+RUN: plutopar with cholesky in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/cholesky
+RUN: polymer with cholesky in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/cholesky
+RUN: polymerpar with cholesky in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/cholesky
+clangsing:cholesky:16.430353
+clang:cholesky:16.394008
+mlir-clang:cholesky:16.374648
+polly:cholesky:53.574419
+pollypar:cholesky:29.212302
+pluto:cholesky:10.151911
+plutopar:cholesky:1.789692
+polymer:cholesky:10.182041
+polymerpar:cholesky:1.862587
+clangsing:cholesky:16.358791
+clang:cholesky:16.380321
+mlir-clang:cholesky:16.394140
+polly:cholesky:53.401906
+pollypar:cholesky:29.258151
+pluto:cholesky:10.148438
+plutopar:cholesky:1.790325
+polymer:cholesky:10.180811
+polymerpar:cholesky:1.862234
+clangsing:cholesky:16.370242
+clang:cholesky:16.413975
+mlir-clang:cholesky:16.389755
+polly:cholesky:53.690778
+pollypar:cholesky:29.391560
+pluto:cholesky:10.165500
+plutopar:cholesky:1.794213
+polymer:cholesky:10.244390
+polymerpar:cholesky:1.861949
+clangsing:cholesky:16.350750
+clang:cholesky:16.390228
+mlir-clang:cholesky:16.380639
+polly:cholesky:53.432300
+pollypar:cholesky:29.236938
+pluto:cholesky:10.159395
+plutopar:cholesky:1.788523
+polymer:cholesky:10.166676
+polymerpar:cholesky:1.863042
+clangsing:cholesky:16.361755
+clang:cholesky:16.411402
+mlir-clang:cholesky:16.403268
+polly:cholesky:53.240038
+pollypar:cholesky:29.230360
+pluto:cholesky:10.171671
+plutopar:cholesky:1.791455
+polymer:cholesky:10.166746
+polymerpar:cholesky:1.864197
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/durbin
+RUN: clangsing with durbin in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/durbin
+RUN: clang with durbin in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/durbin
+RUN: mlir-clang with durbin in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/durbin
+RUN: polly with durbin in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/durbin
+RUN: pollypar with durbin in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/durbin
+RUN: pluto with durbin in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/durbin
+RUN: plutopar with durbin in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/durbin
+RUN: polymer with durbin in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/durbin
+RUN: polymerpar with durbin in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/durbin
+clangsing:durbin:0.025461
+clang:durbin:0.014397
+mlir-clang:durbin:0.014072
+polly:durbin:0.013841
+pollypar:durbin:0.050771
+pluto:durbin:0.013912
+plutopar:durbin:0.013834
+polymer:durbin:0.013973
+polymerpar:durbin:0.080618
+clangsing:durbin:0.014409
+clang:durbin:0.014027
+mlir-clang:durbin:0.014047
+polly:durbin:0.014371
+pollypar:durbin:0.049773
+pluto:durbin:0.013891
+plutopar:durbin:0.014706
+polymer:durbin:0.014575
+polymerpar:durbin:0.080722
+clangsing:durbin:0.013875
+clang:durbin:0.013811
+mlir-clang:durbin:0.014022
+polly:durbin:0.013826
+pollypar:durbin:0.051150
+pluto:durbin:0.013881
+plutopar:durbin:0.013831
+polymer:durbin:0.013909
+polymerpar:durbin:0.081717
+clangsing:durbin:0.014032
+clang:durbin:0.013809
+mlir-clang:durbin:0.014791
+polly:durbin:0.014149
+pollypar:durbin:0.050143
+pluto:durbin:0.014070
+plutopar:durbin:0.013851
+polymer:durbin:0.014295
+polymerpar:durbin:0.079632
+clangsing:durbin:0.013826
+clang:durbin:0.013831
+mlir-clang:durbin:0.014397
+polly:durbin:0.013795
+pollypar:durbin:0.048325
+pluto:durbin:0.014118
+plutopar:durbin:0.013817
+polymer:durbin:0.013829
+polymerpar:durbin:0.080486
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/gramschmidt
+RUN: clangsing with gramschmidt in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/gramschmidt
+RUN: clang with gramschmidt in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/gramschmidt
+RUN: mlir-clang with gramschmidt in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/gramschmidt
+RUN: polly with gramschmidt in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/gramschmidt
+RUN: pollypar with gramschmidt in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/gramschmidt
+RUN: pluto with gramschmidt in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/gramschmidt
+RUN: plutopar with gramschmidt in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/gramschmidt
+RUN: polymer with gramschmidt in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/gramschmidt
+RUN: polymerpar with gramschmidt in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/gramschmidt
+clangsing:gramschmidt:153.639415
+clang:gramschmidt:153.828404
+mlir-clang:gramschmidt:153.908435
+polly:gramschmidt:31.356865
+pollypar:gramschmidt:4.387134
+pluto:gramschmidt:15.943942
+plutopar:gramschmidt:2.833896
+polymer:gramschmidt:15.167556
+polymerpar:gramschmidt:2.762200
+clangsing:gramschmidt:153.794547
+clang:gramschmidt:153.809957
+mlir-clang:gramschmidt:153.731265
+polly:gramschmidt:31.332080
+pollypar:gramschmidt:4.397528
+pluto:gramschmidt:15.933872
+plutopar:gramschmidt:2.835255
+polymer:gramschmidt:15.358422
+polymerpar:gramschmidt:2.753991
+clangsing:gramschmidt:153.671218
+clang:gramschmidt:153.800172
+mlir-clang:gramschmidt:153.750458
+polly:gramschmidt:31.347322
+pollypar:gramschmidt:4.385677
+pluto:gramschmidt:15.923189
+plutopar:gramschmidt:2.823564
+polymer:gramschmidt:15.251284
+polymerpar:gramschmidt:2.765924
+clangsing:gramschmidt:153.668133
+clang:gramschmidt:153.830259
+mlir-clang:gramschmidt:153.605687
+polly:gramschmidt:31.274883
+pollypar:gramschmidt:4.393378
+pluto:gramschmidt:15.924303
+plutopar:gramschmidt:2.819147
+polymer:gramschmidt:15.278796
+polymerpar:gramschmidt:2.757482
+clangsing:gramschmidt:153.680669
+clang:gramschmidt:153.680219
+mlir-clang:gramschmidt:153.738682
+polly:gramschmidt:31.366875
+pollypar:gramschmidt:4.394676
+pluto:gramschmidt:15.918503
+plutopar:gramschmidt:2.807729
+polymer:gramschmidt:15.400963
+polymerpar:gramschmidt:2.766306
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/lu
+RUN: clangsing with lu in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/lu
+RUN: clang with lu in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/lu
+RUN: mlir-clang with lu in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/lu
+RUN: polly with lu in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/lu
+RUN: pollypar with lu in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/lu
+RUN: pluto with lu in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/lu
+RUN: plutopar with lu in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/lu
+RUN: polymer with lu in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/lu
+RUN: polymerpar with lu in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/lu
+clangsing:lu:107.576562
+clang:lu:105.786388
+mlir-clang:lu:106.881952
+polly:lu:43.129603
+pollypar:lu:8.458906
+pluto:lu:9.640555
+plutopar:lu:1.561605
+polymer:lu:9.567704
+polymerpar:lu:1.659507
+clangsing:lu:106.985516
+clang:lu:107.296615
+mlir-clang:lu:106.547128
+polly:lu:42.885155
+pollypar:lu:8.444959
+pluto:lu:9.641456
+plutopar:lu:1.559852
+polymer:lu:9.684223
+polymerpar:lu:1.659494
+clangsing:lu:107.973226
+clang:lu:106.603774
+mlir-clang:lu:106.987628
+polly:lu:43.357921
+pollypar:lu:8.448704
+pluto:lu:9.813991
+plutopar:lu:1.562137
+polymer:lu:10.009054
+polymerpar:lu:1.661468
+clangsing:lu:108.025036
+clang:lu:106.592989
+mlir-clang:lu:106.294186
+polly:lu:43.079787
+pollypar:lu:8.461913
+pluto:lu:9.714622
+plutopar:lu:1.562069
+polymer:lu:9.551725
+polymerpar:lu:1.662108
+clangsing:lu:106.931348
+clang:lu:106.745330
+mlir-clang:lu:106.681148
+polly:lu:43.370788
+pollypar:lu:8.431731
+pluto:lu:9.806982
+plutopar:lu:1.561050
+polymer:lu:9.549924
+polymerpar:lu:1.661793
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/ludcmp
+RUN: clangsing with ludcmp in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/ludcmp
+RUN: clang with ludcmp in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/ludcmp
+RUN: mlir-clang with ludcmp in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/ludcmp
+RUN: polly with ludcmp in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/ludcmp
+RUN: pollypar with ludcmp in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/ludcmp
+RUN: pluto with ludcmp in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/ludcmp
+RUN: plutopar with ludcmp in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/ludcmp
+RUN: polymer with ludcmp in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/ludcmp
+RUN: polymerpar with ludcmp in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/ludcmp
+clangsing:ludcmp:105.197798
+clang:ludcmp:104.347475
+mlir-clang:ludcmp:103.980879
+polly:ludcmp:104.644383
+pollypar:ludcmp:63.691672
+pluto:ludcmp:105.584468
+plutopar:ludcmp:105.813165
+polymer:ludcmp:104.320824
+polymerpar:ludcmp:60.490050
+clangsing:ludcmp:105.007693
+clang:ludcmp:105.165197
+mlir-clang:ludcmp:104.778448
+polly:ludcmp:104.843129
+pollypar:ludcmp:63.077497
+pluto:ludcmp:104.792393
+plutopar:ludcmp:104.933602
+polymer:ludcmp:104.676410
+polymerpar:ludcmp:61.199578
+clangsing:ludcmp:105.649210
+clang:ludcmp:103.781941
+mlir-clang:ludcmp:104.189143
+polly:ludcmp:105.132684
+pollypar:ludcmp:62.887510
+pluto:ludcmp:105.168449
+plutopar:ludcmp:105.286151
+polymer:ludcmp:104.901941
+polymerpar:ludcmp:61.374537
+clangsing:ludcmp:104.679925
+clang:ludcmp:105.013597
+mlir-clang:ludcmp:104.720239
+polly:ludcmp:104.677661
+pollypar:ludcmp:62.854949
+pluto:ludcmp:105.048643
+plutopar:ludcmp:104.506140
+polymer:ludcmp:104.989767
+polymerpar:ludcmp:60.681674
+clangsing:ludcmp:105.530482
+clang:ludcmp:104.226469
+mlir-clang:ludcmp:105.608104
+polly:ludcmp:104.299028
+pollypar:ludcmp:63.467206
+pluto:ludcmp:106.014661
+plutopar:ludcmp:104.286896
+polymer:ludcmp:104.996654
+polymerpar:ludcmp:62.057682
+/home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/trisolv
+RUN: clangsing with trisolv in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/trisolv
+RUN: clang with trisolv in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/trisolv
+RUN: mlir-clang with trisolv in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/trisolv
+RUN: polly with trisolv in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/trisolv
+RUN: pollypar with trisolv in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/trisolv
+RUN: pluto with trisolv in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/trisolv
+RUN: plutopar with trisolv in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/trisolv
+RUN: polymer with trisolv in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/trisolv
+RUN: polymerpar with trisolv in /home/ubuntu/Polygeist-Script/polybench-c-4.2.1-beta/linear-algebra/solvers/trisolv
+clangsing:trisolv:0.012677
+clang:trisolv:0.012647
+mlir-clang:trisolv:0.012598
+polly:trisolv:0.054729
+pollypar:trisolv:0.028739
+pluto:trisolv:0.009233
+plutopar:trisolv:0.009285
+polymer:trisolv:0.009406
+polymerpar:trisolv:0.008166
+clangsing:trisolv:0.012561
+clang:trisolv:0.012564
+mlir-clang:trisolv:0.012582
+polly:trisolv:0.053509
+pollypar:trisolv:0.029187
+pluto:trisolv:0.009615
+plutopar:trisolv:0.009225
+polymer:trisolv:0.009528
+polymerpar:trisolv:0.008169
+clangsing:trisolv:0.012625
+clang:trisolv:0.012563
+mlir-clang:trisolv:0.012588
+polly:trisolv:0.053360
+pollypar:trisolv:0.029232
+pluto:trisolv:0.009494
+plutopar:trisolv:0.009296
+polymer:trisolv:0.009227
+polymerpar:trisolv:0.008160
+clangsing:trisolv:0.012596
+clang:trisolv:0.012514
+mlir-clang:trisolv:0.012586
+polly:trisolv:0.053974
+pollypar:trisolv:0.029049
+pluto:trisolv:0.009627
+plutopar:trisolv:0.009248
+polymer:trisolv:0.009422
+polymerpar:trisolv:0.008142
+clangsing:trisolv:0.012585
+clang:trisolv:0.012557
+mlir-clang:trisolv:0.012577
+polly:trisolv:0.054599
+pollypar:trisolv:0.028279
+pluto:trisolv:0.009452
+plutopar:trisolv:0.009330
+polymer:trisolv:0.009226
+polymerpar:trisolv:0.008167
