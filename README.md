@@ -7,6 +7,8 @@ We provide a docker file that creates the environment automatically.
 ```bash
 # Build the image by yourself
 docker build -t polygeist .
+# Turn off hyperthreading outside Docker
+sudo bash hyper.sh
 # Run the script
 docker run --privileged polygeist /bin/bash -c "cd Polygeist-Script/polybench-c-4.2.1-beta && ./run.sh"
 ```
