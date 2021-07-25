@@ -1,5 +1,19 @@
 # Polygeist-Script
 
+## Use Docker
+
+We provide a docker file that creates the environment automatically.
+
+```bash
+# Build the image by yourself
+docker build -t polygeist .
+# Run the script
+docker run --privileged polygeist /bin/bash -c "cd Polygeist-Script/polybench-c-4.2.1-beta && ./run.sh"
+```
+
+
+## Run manually
+
 Pluto Deps:
 
 ```
@@ -34,8 +48,8 @@ Build mlir-clang:
 
 ```
 $ cd mlir-clang
-$ mkdir llvm-project/build`
-$ cd llvm-project/build`
+$ mkdir llvm-project/build
+$ cd llvm-project/build
 $ cmake -G Ninja ../llvm \
    -DLLVM_ENABLE_PROJECTS="mlir;polly;clang;openmp" \
    -DLLVM_BUILD_EXAMPLES=ON \
@@ -44,7 +58,7 @@ $ cmake -G Ninja ../llvm \
    -DLLVM_ENABLE_ASSERTIONS=ON \  
    
 # Copy the omp.h file from this repo to the build directory of mlir-clang
- ```
+```
 
 Pull polymer
 
