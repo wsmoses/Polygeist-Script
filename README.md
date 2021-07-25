@@ -14,6 +14,17 @@ docker run --privileged polygeist /bin/bash -c "cd Polygeist-Script/polybench-c-
 ```
 
 
+You can also pull a pre-built Docker image - 
+
+```bash
+docker pull kumasento/polygeist
+# Turn off hyperthreading outside Docker
+sudo bash hyper.sh
+# Run the script
+docker run --privileged kumasento/polygeist /bin/bash -c "cd Polygeist-Script/polybench-c-4.2.1-beta && ./run.sh"
+```
+
+
 ## Run manually
 
 Pluto Deps:
