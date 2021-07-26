@@ -80,20 +80,15 @@ $ cmake -G Ninja ../llvm \
 Pull polymer
 
 ```
-$ git clone --recursive https://github.com/kumasento/polymer 
+$ git clone --recursive https://github.com/kumasento/polymer -b pact
 ```
 
 Build polymer
 
-```
-$ cd polymer
-$ git clone https://github.com/wsmoses/Polygeist.git llvm-project
-$ cd llvm-project
-$ git reset --hard 19da7eee184e4d715d9870fe866ac10858e874d1
-
+```sh
 # At the top-level directory within polymer
-$ mkdir llvm-project/build
-$ cd llvm-project/build
+$ mkdir llvm/build
+$ cd llvm/build
 $ cmake ../llvm \
   -DLLVM_ENABLE_PROJECTS="llvm;clang;mlir" \
   -DLLVM_TARGETS_TO_BUILD="host" \
@@ -114,15 +109,11 @@ cmake .. \
   -DMLIR_DIR=$PWD/../llvm/build/lib/cmake/mlir \
   -DLLVM_DIR=$PWD/../llvm/build/lib/cmake/llvm \
   -DLLVM_ENABLE_ASSERTIONS=ON \
-  -DCMAKE_C_COMPILER=clang-9 \
-  -DCMAKE_CXX_COMPILER=clang++-9 \
+  -DCMAKE_C_COMPILER=clang \
+  -DCMAKE_CXX_COMPILER=clang++ \
   -DLLVM_EXTERNAL_LIT=${PWD}/../llvm/build/bin/llvm-lit \
   -G Ninja
 ninja
-
-# Could also add this LD_LIBRARY_PATH to your environment configuration.
-LD_LIBRARY_PATH=$PWD/pluto/lib:$LD_LIBRARY_PATH ninja check-polymer
-
 ```
 
 Run scripts
