@@ -23,12 +23,7 @@ dirList="linear-algebra/blas
          stencils
          medley"
 
-dirList="linear-algebra/blas
-         linear-algebra/kernels
-         linear-algebra/solvers"
 CFLAGS="-march=native -I $BASE/utilities -I $stdinclude -D POLYBENCH_TIME -D POLYBENCH_NO_FLUSH_CACHE -D EXTRALARGE_DATASET "
-
-#dirList="linear-algebra/blas"
 
 TOOLS="clangsing clang mlir-clang polly pollypar pluto plutopar polymer polymerpar "
 
