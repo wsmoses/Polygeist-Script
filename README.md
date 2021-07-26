@@ -1,5 +1,9 @@
 # Polygeist-Script
 
+![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/kumasento/polygeist)
+![Docker Pulls](https://img.shields.io/docker/pulls/kumasento/polygeist)
+![Docker Image Version (latest by date)](https://img.shields.io/docker/v/kumasento/polygeist)
+
 ## Use Docker
 
 We provide a docker file that creates the environment automatically.
