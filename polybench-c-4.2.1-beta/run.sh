@@ -5,12 +5,12 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
-export PATH=$HOME/mlir-gpu/build/bin:$HOME/pluto:$HOME/polymer/build/bin:$PATH
+export PATH=$HOME/mlir-clang/build/bin:$HOME/pluto:$HOME/polymer/build/bin:$PATH
 
-export C_INCLUDE_PATH=$HOME/mlir-gpu/build/projects/openmp/runtime/src
-export LD_LIBRARY_PATH=$HOME/polymer/build/pluto/lib/:$HOME/mlir-gpu/build/lib
+export C_INCLUDE_PATH=$HOME/mlir-clang/build/projects/openmp/runtime/src
+export LD_LIBRARY_PATH=$HOME/polymer/build/pluto/lib/:$HOME/mlir-clang/build/lib
 
-stdinclude=$HOME/mlir-gpu/llvm/../clang/lib/Headers
+stdinclude=$HOME/mlir-clang/llvm/../clang/lib/Headers
 
 LDFLAGS=-lm
 
