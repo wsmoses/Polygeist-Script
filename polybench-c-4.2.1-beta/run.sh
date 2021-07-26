@@ -1,4 +1,3 @@
-
 #!/usr/bin/env bash
 
 set -o errexit
@@ -25,7 +24,7 @@ dirList="linear-algebra/blas
 
 CFLAGS="-march=native -I $BASE/utilities -I $stdinclude -D POLYBENCH_TIME -D POLYBENCH_NO_FLUSH_CACHE -D EXTRALARGE_DATASET "
 
-TOOLS="clangsing clang mlir-clang polly pollypar pluto plutopar polymer polymerpar "
+TOOLS="clangsing clang mlir-clang polly pollypar pluto plutopar polymer polymerpar"
 
 function run()
 { 
