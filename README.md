@@ -113,7 +113,7 @@ cmake .. \
   -DCMAKE_CXX_COMPILER=clang++ \
   -DLLVM_EXTERNAL_LIT=${PWD}/../llvm/build/bin/llvm-lit \
   -G Ninja
-ninja
+ninja -j$(nproc)
 ```
 
 Run scripts
